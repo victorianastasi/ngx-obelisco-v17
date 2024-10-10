@@ -7,7 +7,7 @@ import {
   ViewChild,
 } from '@angular/core';
 import { Router } from '@angular/router';
-import { SearchbarItem } from 'ngx-obelisco-17/core/models';
+import { SearchbarItem } from 'ngx-obelisco-v17/core/models';
 
 @Component({
   selector: 'o-search',

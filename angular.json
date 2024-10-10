@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-obelisco-17-demo": {
+    "ngx-obelisco-v17-demo": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ngx-obelisco-17-demo",
+            "outputPath": "dist/ngx-obelisco-v17-demo",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -28,7 +28,7 @@
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "projects/ngx-obelisco-17/scss/obelisco.scss",
+              "projects/ngx-obelisco-v17/scss/obelisco.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ngx-obelisco-17-demo:build:production"
+              "buildTarget": "ngx-obelisco-v17-demo:build:production"
             },
             "development": {
-              "buildTarget": "ngx-obelisco-17-demo:build:development"
+              "buildTarget": "ngx-obelisco-v17-demo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "ngx-obelisco-17-demo:build"
+            "buildTarget": "ngx-obelisco-v17-demo:build"
           }
         },
         "test": {
@@ -88,7 +88,7 @@
         }
       }
     },
-    "ngx-obelisco-17": {
+    "ngx-obelisco-v17": {
       "projectType": "library",
       "schematics": {
         "@schematics/angular:component": {
@@ -98,21 +98,21 @@
           "strict": true
         }
       },
-      "root": "projects/ngx-obelisco-17",
-      "sourceRoot": "projects/ngx-obelisco-17",
+      "root": "projects/ngx-obelisco-v17",
+      "sourceRoot": "projects/ngx-obelisco-v17",
       "prefix": "o",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/ngx-obelisco-17/ng-package.json"
+            "project": "projects/ngx-obelisco-v17/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-obelisco-17/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-obelisco-v17/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/ngx-obelisco-17/tsconfig.lib.json"
+              "tsConfig": "projects/ngx-obelisco-v17/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -120,7 +120,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/ngx-obelisco-17/tsconfig.spec.json",
+            "tsConfig": "projects/ngx-obelisco-v17/tsconfig.spec.json",
             "polyfills": ["zone.js", "zone.js/testing"]
           }
         }

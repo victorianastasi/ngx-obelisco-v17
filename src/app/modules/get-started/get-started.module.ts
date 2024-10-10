@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { HighlightJsModule } from 'ngx-highlight-js';
 import { ClipboardDirective } from 'src/app/shared/directives/copy/clipboard.directive';
 import { GetStartedComponent } from './get-started.component';
-import { OCardModule } from 'ngx-obelisco-17/card';
-import { OButtonModule } from 'ngx-obelisco-17/button';
+import { OCardModule } from 'ngx-obelisco-v17/card';
+import { OButtonModule } from 'ngx-obelisco-v17/button';
 import { RouterModule } from '@angular/router';
 
 @NgModule({

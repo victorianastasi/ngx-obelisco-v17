@@ -13,8 +13,8 @@
     "skipLibCheck": true,
     "paths": {
       // "ngx-obelisco": ["./dist/ngx-obelisco"]
-      "ngx-obelisco-17": ["projects/ngx-obelisco-17/index.ts"],
-      "ngx-obelisco-17/*": ["projects/ngx-obelisco-17/*"]
+      "ngx-obelisco-v17": ["projects/ngx-obelisco-v17/index.ts"],
+      "ngx-obelisco-v17/*": ["projects/ngx-obelisco-v17/*"]
     },
     "esModuleInterop": true,
     "sourceMap": true,

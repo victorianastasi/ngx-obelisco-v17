@@ -7,7 +7,7 @@ import {
   OnInit,
 } from '@angular/core';
 import tippy from 'tippy.js';
-import { TooltipDirections } from 'ngx-obelisco-17/core/models';
+import { TooltipDirections } from 'ngx-obelisco-v17/core/models';
 
 @Directive({
   selector: '[oTooltip]',

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { SpinnerTypes, Sizes } from 'ngx-obelisco-17/core/models';
+import { SpinnerTypes, Sizes } from 'ngx-obelisco-v17/core/models';
 
 @Component({
   selector: 'o-spinner',

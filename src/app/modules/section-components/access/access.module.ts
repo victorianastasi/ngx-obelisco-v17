@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { ONavModule } from 'ngx-obelisco-17/nav';
+import { ONavModule } from 'ngx-obelisco-v17/nav';
 
 import { AccessRoutingModule } from './access-routing.module';
 import { AccessComponent } from './access.component';

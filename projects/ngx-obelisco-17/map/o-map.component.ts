@@ -4,8 +4,8 @@ import {
   SafeHtml,
   SafeResourceUrl,
 } from '@angular/platform-browser';
-import { MediaIframe } from 'ngx-obelisco-17/core/models';
-import { OCustomContentDirective } from 'ngx-obelisco-17/directives';
+import { MediaIframe } from 'ngx-obelisco-v17/core/models';
+import { OCustomContentDirective } from 'ngx-obelisco-v17/directives';
 
 @Component({
   selector: 'o-map',

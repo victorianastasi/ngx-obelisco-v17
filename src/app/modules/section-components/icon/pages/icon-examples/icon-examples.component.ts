@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { EnumMaterialIcons, EnumBoxIcons } from 'ngx-obelisco-17/core/models';
+import { EnumMaterialIcons, EnumBoxIcons } from 'ngx-obelisco-v17/core/models';
 
 @Component({
   selector: 'app-icon-examples',
@@ -16,7 +16,7 @@ export class IconExamplesComponent {
 
   public exampleIconTs = `
 import { Component  } from '@angular/core';
-import { EnumMaterialIcons, EnumBoxIcons } from 'ngx-obelisco-17/core/models';
+import { EnumMaterialIcons, EnumBoxIcons } from 'ngx-obelisco-v17/core/models';
 
 @Component({
   selector: 'app-example',

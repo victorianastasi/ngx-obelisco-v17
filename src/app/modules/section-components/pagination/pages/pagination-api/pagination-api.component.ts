@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DataSource } from 'ngx-obelisco-17/core/models';
+import { DataSource } from 'ngx-obelisco-v17/core/models';
 import { COLUMNS } from 'src/app/constants/components.constants';
 
 @Component({

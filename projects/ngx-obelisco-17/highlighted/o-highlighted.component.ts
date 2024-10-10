@@ -4,9 +4,9 @@ import {
   MediaIframe,
   MediaVideo,
   MediaImage,
-} from 'ngx-obelisco-17/core/models';
+} from 'ngx-obelisco-v17/core/models';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { OCustomContentDirective } from 'ngx-obelisco-17/directives';
+import { OCustomContentDirective } from 'ngx-obelisco-v17/directives';
 
 @Component({
   selector: 'o-highlighted',

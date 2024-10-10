@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { OSpinnerModule } from 'ngx-obelisco-17/spinner';
-import { ONavModule } from 'ngx-obelisco-17/nav';
-import { OTableModule } from 'ngx-obelisco-17/table';
+import { OSpinnerModule } from 'ngx-obelisco-v17/spinner';
+import { ONavModule } from 'ngx-obelisco-v17/nav';
+import { OTableModule } from 'ngx-obelisco-v17/table';
 import { SpinnerRoutingModule } from './spinner.routing.module';
 
 import { ViewerComponent } from 'src/app/components/viewer/viewer.component';

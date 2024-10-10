@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { ODefaultImageDirective } from 'ngx-obelisco-17/directives';
+import { ODefaultImageDirective } from 'ngx-obelisco-v17/directives';
 import { OPanelSmallComponent } from './o-panel-small/o-panel-small.component';
 
 @NgModule({

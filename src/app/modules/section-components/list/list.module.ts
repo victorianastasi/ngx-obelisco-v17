@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ListRoutingModule } from './list-routing.module';
 import { ListComponent } from './list.component';
-import { OListModule } from 'ngx-obelisco-17/list';
+import { OListModule } from 'ngx-obelisco-v17/list';
 
 @NgModule({
   declarations: [ListComponent],

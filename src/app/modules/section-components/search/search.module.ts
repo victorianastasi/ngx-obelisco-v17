@@ -9,9 +9,9 @@ import { TabsLinkComponent } from 'src/app/components/tabs-link/tabs-link.compon
 import { ViewerComponent } from 'src/app/components/viewer/viewer.component';
 import { ClipboardDirective } from 'src/app/shared/directives/copy/clipboard.directive';
 import { HighlightJsModule } from 'ngx-highlight-js';
-import { ONavModule } from 'ngx-obelisco-17/nav';
-import { OTableModule } from 'ngx-obelisco-17/table';
-import { OSearchModule } from 'ngx-obelisco-17/search';
+import { ONavModule } from 'ngx-obelisco-v17/nav';
+import { OTableModule } from 'ngx-obelisco-v17/table';
+import { OSearchModule } from 'ngx-obelisco-v17/search';
 
 @NgModule({
   declarations: [SearchComponent, SearchApiComponent, SearchExamplesComponent],

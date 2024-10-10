@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActiveDay, CalendarDate } from 'ngx-obelisco-17/core/models';
+import { ActiveDay, CalendarDate } from 'ngx-obelisco-v17/core/models';
 
 @Component({
   selector: 'o-calendar',

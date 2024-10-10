@@ -1,4 +1,4 @@
-import { MediaGallery } from 'ngx-obelisco-17/core/models';
+import { MediaGallery } from 'ngx-obelisco-v17/core/models';
 import { Component, Input } from '@angular/core';
 
 @Component({

@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { MediaIframe } from 'ngx-obelisco-17/core/models';
+import { MediaIframe } from 'ngx-obelisco-v17/core/models';
 
 @Component({
   selector: 'o-map-iframe',

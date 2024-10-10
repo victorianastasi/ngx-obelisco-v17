@@ -17,7 +17,7 @@ NgxObelisco se distribuye por medio del [paquete publicado en npm](https://www.n
 Para instalarlo en un proyecto que ya usa npm, hay que ejecutar:
 
 ```bash
-npm install ngx-obelisco-17
+npm install ngx-obelisco-v17
 ```
 
 ### Requerimientos
@@ -68,14 +68,14 @@ En lugar de mostrar cada importación individualmente, a continuación se presen
 Además de importar componente por componente como por ejemplo:
 
 ```js
-import { OAccessModule } from "ngx-obelisco-17/access";
-import { OAlertModule } from "ngx-obelisco-17/alert";
+import { OAccessModule } from "ngx-obelisco-v17/access";
+import { OAlertModule } from "ngx-obelisco-v17/alert";
 ```
 
 Ó Puedes usar este que trae todos los módulos:
 
 ```js
-import { NgxObeliscoModule } from "ngx-obelisco-17/ngx-obelisco";
+import { NgxObeliscoModule } from "ngx-obelisco-v17/ngx-obelisco";
 ```
 
 ## Mantenimiento y colaboración
@@ -88,4 +88,4 @@ Para agilizar y hacer más transparente el proceso, cualquier persona puede cont
 2. Reportar un error o mejora técnica: Si encontrás un error en alguno de los componentes o alguna mejora que impacte en la usabilidad, accesibilidad o rendimiento.
 3. Aportar con código: Si pediste un caso nuevo o reportaste un error y querés colaborar con el código, explicá en el issue que vas a estar trabajando en eso.
 
-Para más detalles, consultá nuestra guía [Contribuir con NgxObelisco](https://github.com/gcba/ngx-obelisco-17/blob/main/CONTRIBUTING.md).
+Para más detalles, consultá nuestra guía [Contribuir con NgxObelisco](https://github.com/gcba/ngx-obelisco-v17/blob/main/CONTRIBUTING.md).

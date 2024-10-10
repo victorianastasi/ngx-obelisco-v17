@@ -10,8 +10,8 @@ import {
   CollapseInputs,
   Collapse,
   CollapseItems,
-} from 'ngx-obelisco-17/core/models';
-import { OCustomContentDirective } from 'ngx-obelisco-17/directives';
+} from 'ngx-obelisco-v17/core/models';
+import { OCustomContentDirective } from 'ngx-obelisco-v17/directives';
 
 @Component({
   selector: 'o-collapse',

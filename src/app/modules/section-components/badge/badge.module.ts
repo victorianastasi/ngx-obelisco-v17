@@ -5,14 +5,14 @@ import { BadgeExamplesComponent } from './pages/badge-examples/badge-examples.co
 import { BadgeRoutingModule } from './badge-routing.module';
 import { BadgeComponent } from './badge.component';
 
-import { ONavModule } from 'ngx-obelisco-17/nav';
-import { OBadgeModule } from 'ngx-obelisco-17/badge';
+import { ONavModule } from 'ngx-obelisco-v17/nav';
+import { OBadgeModule } from 'ngx-obelisco-v17/badge';
 import { ViewerComponent } from 'src/app/components/viewer/viewer.component';
 import { ClipboardDirective } from 'src/app/shared/directives/copy/clipboard.directive';
 import { HighlightJsModule } from 'ngx-highlight-js';
-import { OTableModule } from 'ngx-obelisco-17/table';
+import { OTableModule } from 'ngx-obelisco-v17/table';
 import { TabsLinkComponent } from 'src/app/components/tabs-link/tabs-link.component';
-import { OButtonModule } from 'ngx-obelisco-17/button';
+import { OButtonModule } from 'ngx-obelisco-v17/button';
 
 @NgModule({
   declarations: [BadgeApiComponent, BadgeExamplesComponent, BadgeComponent],

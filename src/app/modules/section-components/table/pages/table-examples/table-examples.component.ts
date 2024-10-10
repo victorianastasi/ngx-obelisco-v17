@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Column, DataSource } from 'ngx-obelisco-17/core/models';
+import { Column, DataSource } from 'ngx-obelisco-v17/core/models';
 import {
   TABLE_EXAMPLE_BORDERED_HTML,
   TABLE_EXAMPLE_NORMAL_HTML,

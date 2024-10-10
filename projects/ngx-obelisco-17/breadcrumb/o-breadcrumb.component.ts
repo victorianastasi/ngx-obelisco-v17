@@ -1,8 +1,8 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { NavigationEnd, Router, RouterEvent } from '@angular/router';
 import { filter, startWith, Subject, takeUntil } from 'rxjs';
-import { BreadcrumbService } from 'ngx-obelisco-17/core/services';
-import { BreadcrumbRoute } from 'ngx-obelisco-17/core/models';
+import { BreadcrumbService } from 'ngx-obelisco-v17/core/services';
+import { BreadcrumbRoute } from 'ngx-obelisco-v17/core/models';
 
 @Component({
   selector: 'o-breadcrumb',

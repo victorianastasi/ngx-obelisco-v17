@@ -7,8 +7,8 @@ import { TabsLinkComponent } from 'src/app/components/tabs-link/tabs-link.compon
 import { DropdownSelectionApiComponent } from './pages/dropdown-selection-api/dropdown-selection-api.component';
 import { DropdownSelectionExamplesComponent } from './pages/dropdown-selection-examples/dropdown-selection-examples.component';
 import { ViewerComponent } from 'src/app/components/viewer/viewer.component';
-import { ODropdownModule } from 'ngx-obelisco-17/dropdown';
-import { OTableModule } from 'ngx-obelisco-17/table';
+import { ODropdownModule } from 'ngx-obelisco-v17/dropdown';
+import { OTableModule } from 'ngx-obelisco-v17/table';
 import { HighlightJsModule } from 'ngx-highlight-js';
 
 @NgModule({

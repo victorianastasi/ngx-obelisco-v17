@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { ONavModule } from 'ngx-obelisco-17/nav';
-import { OTableModule } from 'ngx-obelisco-17/table';
-import { OAlertModule } from 'ngx-obelisco-17/alert';
-import { OCustomContentDirective } from 'ngx-obelisco-17/directives';
+import { ONavModule } from 'ngx-obelisco-v17/nav';
+import { OTableModule } from 'ngx-obelisco-v17/table';
+import { OAlertModule } from 'ngx-obelisco-v17/alert';
+import { OCustomContentDirective } from 'ngx-obelisco-v17/directives';
 
 import { ViewerComponent } from 'src/app/components/viewer/viewer.component';
 import { ClipboardDirective } from 'src/app/shared/directives/copy/clipboard.directive';

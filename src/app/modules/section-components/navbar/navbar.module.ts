@@ -8,9 +8,9 @@ import { NavbarApiComponent } from './pages/navbar-api/navbar-api.component';
 import { ViewerComponent } from 'src/app/components/viewer/viewer.component';
 import { ClipboardDirective } from 'src/app/shared/directives/copy/clipboard.directive';
 import { HighlightJsModule } from 'ngx-highlight-js';
-import { OTableModule } from 'ngx-obelisco-17/table';
-import { ONavModule } from 'ngx-obelisco-17/nav';
-import { ONavbarModule } from 'ngx-obelisco-17/navbar';
+import { OTableModule } from 'ngx-obelisco-v17/table';
+import { ONavModule } from 'ngx-obelisco-v17/nav';
+import { ONavbarModule } from 'ngx-obelisco-v17/navbar';
 import { TabsLinkComponent } from 'src/app/components/tabs-link/tabs-link.component';
 
 @NgModule({

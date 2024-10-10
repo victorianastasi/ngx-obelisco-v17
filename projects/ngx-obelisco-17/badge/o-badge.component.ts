@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { BadgeTypes } from 'ngx-obelisco-17/core/models';
+import { BadgeTypes } from 'ngx-obelisco-v17/core/models';
 
 @Component({
   selector: 'o-badge',

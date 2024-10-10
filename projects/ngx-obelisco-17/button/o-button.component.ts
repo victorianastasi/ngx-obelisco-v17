@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ButtonTypes, ButtonSizes } from 'ngx-obelisco-17/core/models';
+import { ButtonTypes, ButtonSizes } from 'ngx-obelisco-v17/core/models';
 
 @Component({
   selector: 'o-button',

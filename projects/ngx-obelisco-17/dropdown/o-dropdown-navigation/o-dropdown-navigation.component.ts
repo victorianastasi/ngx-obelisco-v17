@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { DropdownNavigationItem } from 'ngx-obelisco-17/core/models';
+import { DropdownNavigationItem } from 'ngx-obelisco-v17/core/models';
 
 @Component({
   selector: 'o-dropdown-navigation',

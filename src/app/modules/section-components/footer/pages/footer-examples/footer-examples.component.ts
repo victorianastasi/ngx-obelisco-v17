@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CustomContent } from 'ngx-obelisco-17/core/models';
+import { CustomContent } from 'ngx-obelisco-v17/core/models';
 import {
   FOOTER_CUSTOM_CONTENT_HTML,
   FOOTER_CUSTOM_CUSTOM_TS,

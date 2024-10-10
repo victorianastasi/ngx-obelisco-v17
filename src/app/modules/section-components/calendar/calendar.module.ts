@@ -11,10 +11,10 @@ import { ClipboardDirective } from 'src/app/shared/directives/copy/clipboard.dir
 import { HighlightJsModule } from 'ngx-highlight-js';
 import { TabsLinkComponent } from 'src/app/components/tabs-link/tabs-link.component';
 
-import { ONavModule } from 'ngx-obelisco-17/nav';
-import { OCalendarModule } from 'ngx-obelisco-17/calendar';
-import { OTableModule } from 'ngx-obelisco-17/table';
-import { OButtonModule } from 'ngx-obelisco-17/button';
+import { ONavModule } from 'ngx-obelisco-v17/nav';
+import { OCalendarModule } from 'ngx-obelisco-v17/calendar';
+import { OTableModule } from 'ngx-obelisco-v17/table';
+import { OButtonModule } from 'ngx-obelisco-v17/button';
 
 @NgModule({
   declarations: [

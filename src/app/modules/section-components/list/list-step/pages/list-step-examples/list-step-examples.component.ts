@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Step } from 'ngx-obelisco-17/core/models';
+import { Step } from 'ngx-obelisco-v17/core/models';
 import {
   LIST_STEP_EXAMPLE_HTML,
   LIST_STEP_EXAMPLE_TS,

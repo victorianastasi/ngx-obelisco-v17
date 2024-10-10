@@ -3,7 +3,7 @@ import {
   Access,
   AccessCategory,
   AccessList,
-} from 'ngx-obelisco-17/core/models';
+} from 'ngx-obelisco-v17/core/models';
 
 @Component({
   selector: 'o-access-list',

@@ -8,9 +8,9 @@ import { TabsLinkComponent } from 'src/app/components/tabs-link/tabs-link.compon
 import { ViewerComponent } from 'src/app/components/viewer/viewer.component';
 import { ClipboardDirective } from 'src/app/shared/directives/copy/clipboard.directive';
 import { HighlightJsModule } from 'ngx-highlight-js';
-import { OIconModule } from 'ngx-obelisco-17/icon';
+import { OIconModule } from 'ngx-obelisco-v17/icon';
 import { IconBxDocComponent } from './pages/icon-bx-doc/icon-bx-doc.component';
-import { OCollapseModule } from 'ngx-obelisco-17/collapse';
+import { OCollapseModule } from 'ngx-obelisco-v17/collapse';
 import { IconMatDocComponent } from './pages/icon-mat-doc/icon-mat-doc.component';
 
 @NgModule({

@@ -4,7 +4,7 @@ import {
   NavbarRouteAccount,
   NavbarRouteLogin,
   SearchbarItem,
-} from 'ngx-obelisco-17/core/models';
+} from 'ngx-obelisco-v17/core/models';
 import {
   NAVBAR_EXTENDED_LOGIN_EXAMPLE_HTML,
   NAVBAR_EXTENDED_LOGIN_EXAMPLE_TS,

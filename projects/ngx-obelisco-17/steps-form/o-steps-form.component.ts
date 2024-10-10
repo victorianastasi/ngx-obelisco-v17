@@ -8,9 +8,9 @@ import {
   Output,
 } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
-import { AbstractStep } from 'ngx-obelisco-17/core/abstracts';
-import { StepForm } from 'ngx-obelisco-17/core/models';
-import { StepService } from 'ngx-obelisco-17/core/services';
+import { AbstractStep } from 'ngx-obelisco-v17/core/abstracts';
+import { StepForm } from 'ngx-obelisco-v17/core/models';
+import { StepService } from 'ngx-obelisco-v17/core/services';
 
 @Component({
   selector: 'o-steps-form',

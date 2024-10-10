@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, ElementRef, Input, Renderer2, ViewChild } from '@angular/core';
-import { Sizes } from 'ngx-obelisco-17/core/models';
+import { Sizes } from 'ngx-obelisco-v17/core/models';
 
 @Component({
   selector: 'o-access',

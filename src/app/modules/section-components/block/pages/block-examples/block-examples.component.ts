@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { StepService } from 'ngx-obelisco-17/core/services';
+import { StepService } from 'ngx-obelisco-v17/core/services';
 import {
   BLOCK_EXAMPLE_BACKGROUND,
   BLOCK_EXAMPLE_DESCRIPTION,

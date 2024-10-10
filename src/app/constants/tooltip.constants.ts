@@ -1,4 +1,4 @@
-import { DataSource, TooltipDirections } from 'ngx-obelisco-17/core/models';
+import { DataSource, TooltipDirections } from 'ngx-obelisco-v17/core/models';
 
 interface Tooltip {
   name: string;

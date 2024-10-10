@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { MediaIframe, MediaVideo } from 'ngx-obelisco-17/core/models';
+import { MediaIframe, MediaVideo } from 'ngx-obelisco-v17/core/models';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
