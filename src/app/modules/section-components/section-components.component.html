@@ -17,6 +17,21 @@
 
     <ng-template #componentTemplate>
       <div class="container mt-5">
+        <div class="access-items-3">
+          <ng-container *ngFor="let component of componentsNavigation">
+            <div class="col">
+              <a 
+                class="list-group-item item-sm" 
+                [routerLink]="component.route"
+              >
+                <div class="access-content">
+                  <span class="access-title">{{ component.title }}</span>
+                </div>
+              </a>
+            </div>
+          </ng-container>
+        </div>
+        
         <div class="card-deck max-cards-3 card-column">
           <o-card
             *ngFor="let component of componentsNavigation"

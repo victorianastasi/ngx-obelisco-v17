@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router, RouterOutlet, RouterModule  } from '@angular/router';
 import { NavbarRoute } from 'ngx-obelisco-v17/core/models';
 import { ONavbarModule } from 'ngx-obelisco-v17/navbar';
 import {
@@ -8,15 +8,17 @@ import {
   ICONS_NAVIGATION,
 } from './constants/components.constants';
 import { HighlightJsModule } from 'ngx-highlight-js';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ONavbarModule, HighlightJsModule],
+  imports: [RouterOutlet, ONavbarModule, HighlightJsModule, RouterModule, CommonModule ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
+  showSection: boolean = false;
   routes: NavbarRoute[] = [
     {
       title: 'Introducción',
@@ -80,6 +82,13 @@ export class AppComponent implements OnInit {
           document.body.classList.remove('scrollable');
         }
       }
+    });
+
+    this.router.events.subscribe(() => {
+      const allowedRoutes = ['/get-started', '/components'];
+      this.showSection = allowedRoutes.some(route =>
+        this.router.url.startsWith(route)
+      );
     });
   }
 }

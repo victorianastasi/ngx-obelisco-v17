@@ -8,7 +8,8 @@ import {
   BUTTON_TYPES_LINK,
   BUTTON_TYPES_SOLID,
   BUTTON_TYPES_TS,
-  BUTTON_SIZE_XS
+  BUTTON_SIZE_XS,
+  BUTTON_DISABLED
 } from 'src/app/constants/button.constants';
 
 @Component({
@@ -23,6 +24,7 @@ export class ButtonExamplesComponent {
   public buttonTypesTs = BUTTON_TYPES_TS;
   public buttonSizes = BUTTON_SIZES;
   public buttonBlock = BUTTON_BLOCK;
+  public buttonDisabled = BUTTON_DISABLED;
   public buttonIcon = BUTTON_ICON;
   public buttonSpinner = BUTTON_SPINNER;
   public buttonSizeXs = BUTTON_SIZE_XS;

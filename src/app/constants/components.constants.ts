@@ -44,21 +44,21 @@ export enum ComponentEnum {
 }
 
 export const COMPONENTS_NAVIGATION = [
-  {
-    title: 'Accesos',
-    image: { src: 'assets/component-cards/Accesos.svg' },
-    route: '/components/access',
-    children: [
-      {
-        title: 'Simple',
-        route: '/components/access/access-simple'
-      },
-      {
-        title: 'Lista de accesos',
-        route: '/components/access/access-list'
-      }
-    ]
-  },
+  // {
+  //   title: 'Accesos',
+  //   image: { src: 'assets/component-cards/Accesos.svg' },
+  //   route: '/components/access',
+  //   children: [
+  //     {
+  //       title: 'Simple',
+  //       route: '/components/access/access-simple'
+  //     },
+  //     {
+  //       title: 'Lista de accesos',
+  //       route: '/components/access/access-list'
+  //     }
+  //   ]
+  // },
   {
     title: 'Alerta',
     image: { src: 'assets/component-cards/Alerta.svg' },

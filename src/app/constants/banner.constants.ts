@@ -75,8 +75,8 @@ export const BANNER_SECTIONS = `
     una línea de texto.
   </o-banner-text>
   <o-banner-actions>
-    <o-button size="sm" type="secondary" link="#">Botón</o-button>
-    <o-button size="sm" link="#">Botón</o-button>
+    <o-button size="sm" type="primary" link="#">Botón</o-button>
+    <o-button size="sm" type="light" [isOutline]="true" link="#">Botón</o-button>
   </o-banner-actions>
 </o-banner>
 `;
@@ -113,11 +113,11 @@ export const BANNER_ICON_COOKIE = 'cookie';
 
 export const BANNER_BUTTON_HTML = `
 <o-banner [content]="content" [icon]="icon">
-  <o-button #children size="sm" type="secondary" link="#">Botón</o-button>
+  <o-button #children size="sm" type="primary" link="#">Botón</o-button>
 </o-banner>
 
 <o-banner [content]="content" [icon]="icon" [isDark]="true">
-  <o-button #children size="sm" type="secondary" link="#">Botón</o-button>
+  <o-button #children size="sm" type="primary" link="#">Botón</o-button>
 </o-banner>
 `;
 
@@ -135,12 +135,12 @@ export class ExampleComponent {
 
 export const BANNER_BUTTONS_HTML = `
 <o-banner [content]="content" [icon]="iconCookie">
-  <o-button #children size="sm" type="secondary" link="#">Botón</o-button>
-  <o-button #children size="sm" link="#">Botón</o-button>
+  <o-button #children size="sm" type="primary" link="#">Botón</o-button>
+  <o-button #children size="sm" type="primary" [isOutline]="true" link="#">Botón</o-button>
 </o-banner>
 
 <o-banner [content]="content" [icon]="iconCookie" [isDark]="true">
-  <o-button #children size="sm" type="secondary" link="#">Botón</o-button>
-  <o-button #children size="sm" link="#">Botón</o-button>
+  <o-button #children size="sm" type="primary" link="#">Botón</o-button>
+  <o-button #children size="sm" type="light" [isOutline]="true" link="#">Botón</o-button>
 </o-banner>
 `;
