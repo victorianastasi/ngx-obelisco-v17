@@ -33,44 +33,44 @@ export class AppComponent implements OnInit {
   componentRoutes =
     COMPONENTS_NAVIGATION.concat(OTHERS_NAVIGATION).concat(ICONS_NAVIGATION);
 
-  searchItemsList = this.componentRoutes
-    .flatMap((item) => {
-      if (item['children']) {
-        return item.children.flatMap((navItem) => [
-          { title: `${item.title} | ${navItem.title}`, route: navItem.route },
-          {
-            title: `${item.title} | ${navItem.title} - Api`,
-            route: `${navItem.route}/api`,
-          },
-          {
-            title: `${item.title} | ${navItem.title} - Ejemplos`,
-            route: `${navItem.route}/examples`,
-          },
-        ]);
-      } else if (
-        item.route === '/get-started' ||
-        item.route === '/components' ||
-        item.route === '/'
-      ) {
-        return item;
-      } else {
-        return [
-          { title: item.title, route: item.route },
-          { title: `${item.title} - Api`, route: `${item.route}/api` },
-          {
-            title: `${item.title} - Ejemplos`,
-            route: `${item.route}/examples`,
-          },
-        ];
-      }
-    })
-    .sort((a, b) => a.title.localeCompare(b.title));
+  // searchItemsList = this.componentRoutes
+  //   .flatMap((item) => {
+  //     if (item['children']) {
+  //       return item.children.flatMap((navItem) => [
+  //         { title: `${item.title} | ${navItem.title}`, route: navItem.route },
+  //         {
+  //           title: `${item.title} | ${navItem.title} - Api`,
+  //           route: `${navItem.route}/api`,
+  //         },
+  //         {
+  //           title: `${item.title} | ${navItem.title} - Ejemplos`,
+  //           route: `${navItem.route}/examples`,
+  //         },
+  //       ]);
+  //     } else if (
+  //       item.route === '/get-started' ||
+  //       item.route === '/components' ||
+  //       item.route === '/'
+  //     ) {
+  //       return item;
+  //     } else {
+  //       return [
+  //         { title: item.title, route: item.route },
+  //         { title: `${item.title} - Api`, route: `${item.route}/api` },
+  //         {
+  //           title: `${item.title} - Ejemplos`,
+  //           route: `${item.route}/examples`,
+  //         },
+  //       ];
+  //     }
+  //   })
+  //   .sort((a, b) => a.title.localeCompare(b.title));
 
   constructor(private router: Router) {
-    this.searchItemsList.push({ title: 'Inicio', route: '/home' });
-    this.searchItemsList.push({ title: 'Componentes', route: '/components' });
-    this.searchItemsList.push({ title: 'Comenzar', route: '/get-started' });
-    this.searchItemsList.sort((a, b) => a.title.localeCompare(b.title));
+    // this.searchItemsList.push({ title: 'Inicio', route: '/home' });
+    // this.searchItemsList.push({ title: 'Componentes', route: '/components' });
+    // this.searchItemsList.push({ title: 'Comenzar', route: '/get-started' });
+    // this.searchItemsList.sort((a, b) => a.title.localeCompare(b.title));
   }
 
   ngOnInit() {

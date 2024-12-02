@@ -99,19 +99,19 @@
   <div class="header-backdrop"></div>
 </header>
 
-<section class="p-3 bg-neutral" *ngIf="showSection">
-  <nav aria-label="Navegación horizontal">
-    <ul class="nav flex-row nav-pills">
+<section class="p-2 px-4 bg-dark" *ngIf="showSection">
+  <nav aria-label="Navegación horizontal de librería ngx-obelisco-v17" class="custom-nav-sections" style="width: fit-content; margin-left: auto;">
+    <ul class="nav flex-row nav-pills justify-content-center">
       <li class="nav-item">
         <a
-          class="nav-link"
+          class="btn btn-outline-light"
           routerLink="/"
           ><span>ngx-obelisco-v17</span></a
         >
       </li>
       <li class="nav-item">
         <a
-          class="nav-link"
+          class="btn btn-outline-light"
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
           routerLink="/get-started"
@@ -120,7 +120,7 @@
       </li>
       <li class="nav-item">
         <a
-          class="nav-link"
+          class="btn btn-outline-light"
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: false }"
           routerLink="/components"
@@ -134,7 +134,7 @@
 <router-outlet />
 
 <h2 class="sr-only">Navegación de pie de página</h2>
-<footer class="main-footer mt-5">
+<footer class="main-footer">
   <div class="container">
     <section class="footer-legal-section">
       <h3 class="sr-only">Información gubernamental</h3>
