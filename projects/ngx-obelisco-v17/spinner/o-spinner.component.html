@@ -1,5 +1,5 @@
 <div
-  class="spinner-border"
+  [class.spinner-border]="!isExpandable"
   [class]="'text-' + type"
   [class.spinner-border-sm]="size === 'sm'"
   [class.spinner-border-lg]="size === 'lg'"
@@ -8,3 +8,6 @@
 >
   <span class="sr-only">Cargando...</span>
 </div>
+<ng-container *ngIf="description">
+  <p class="spinner-description">{{description}}</p>
+</ng-container>

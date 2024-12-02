@@ -4,7 +4,7 @@ export type AlertTypes = 'warning' | 'success' | 'danger' | 'info';
 
 export type StatusMessageTypes = Types | 'institutional';
 
-export type SpinnerTypes = Types | 'secondary' | 'dark' | 'light';
+export type SpinnerTypes = 'primary' | 'secondary' | 'tertiary' | 'success' | 'danger' | 'light' | 'dark';
 
 export type BadgeTypes = Types | 'secondary';
 
