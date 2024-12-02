@@ -27,7 +27,7 @@ export class OProgressBarComponent
   public aux: number = 0;
 
   @Input() public description!: string;
-  @Input() public type: ProgressBarTypes = 'info';
+  @Input() public type: ProgressBarTypes = 'primary';
   @Input() public currentStep: number = 0;
   @Input() public totalSteps: number = 10;
   @Input() public customClasses: string = '';

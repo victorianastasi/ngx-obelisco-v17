@@ -12,7 +12,7 @@ export const PROGRESS_BAR_NAVIGATION = [
 ];
 
 export const PROGRESS_BAR_TYPES = `
-  type ProgressBarTypes = 'info' | 'success';
+  type ProgressBarTypes = 'primary' | 'success';
 `;
 
 export const DATA_SOURCE_PROGRESS_BAR_INPUT: DataSource[] = [
@@ -26,7 +26,7 @@ export const DATA_SOURCE_PROGRESS_BAR_INPUT: DataSource[] = [
   {
     name: { data: '@Input() <br /> type: ProgressBarTypes', customClasses: '' },
     description: {
-      data: 'Se utiliza para definir el tipo de la barra de progreso.',
+      data: 'Se utiliza para definir el tipo de la barra de progreso. Por defecto es primary',
       customClasses: '',
     },
   },
@@ -67,7 +67,7 @@ export const DATA_SOURCE_PROGRESS_BAR_OUTPUT: DataSource[] = [
 ];
 
 export const PROGRESS_BAR_EXAMPLE_DIRECTIVE = `
-<o-progress-bar type="info" description='Descripción' [currentStep]="4" [totalSteps]="8"></o-progress-bar>
+<o-progress-bar type="primary" description='Descripción' [currentStep]="4" [totalSteps]="8"></o-progress-bar>
 
 <o-button oStepPrevious type="link" size="sm">Anterior</o-button>
 <o-button oStepNext type="link" size="sm">Siguiente</o-button>
@@ -118,7 +118,7 @@ export class ExampleComponent implements OnInit {
 `;
 
 export const PROGRESS_BAR_EXAMPLE_NO_STEPS = `
-<o-progress-bar type="info" [currentStep]="5"></o-progress-bar>
+<o-progress-bar [currentStep]="5"></o-progress-bar>
 
 <o-progress-bar type="success" [currentStep]="4"></o-progress-bar>
 `;

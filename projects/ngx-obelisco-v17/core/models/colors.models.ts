@@ -8,7 +8,7 @@ export type SpinnerTypes = 'primary' | 'secondary' | 'tertiary' | 'success' | 'd
 
 export type BadgeTypes = Types | 'secondary';
 
-export type ProgressBarTypes = 'info' | 'success';
+export type ProgressBarTypes = 'primary' | 'success';
 
 export type ButtonTypes = 'primary' | 'secondary' | 'tertiary' | 'success' | 'danger' | 'light' | 'link' ;
 
