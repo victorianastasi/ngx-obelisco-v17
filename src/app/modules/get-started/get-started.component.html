@@ -1,7 +1,7 @@
 <div class="container py-5">
   <div class="row flex-row-reverse">
-    <div class="col-12 col-lg-4 position-relative">
-      <div class="intro-menu d-none d-lg-block">
+    <div class="col-12 col-xl-3 position-relative">
+      <div class="intro-menu d-none d-xl-block">
         <strong class="intro-menu__title">En esta página</strong>
         <hr />
         <nav class="navegación-indice">
@@ -57,7 +57,7 @@
         </nav>
       </div>
     </div>
-    <div class="col-lg-8 col-12">
+    <div class="col-xl-9 col-12">
       <section>
         <h1>Introducción</h1>
         <br />
@@ -69,7 +69,7 @@
       </section>
 
       <section class="mb-3 pt-5 section-intro" id="section1">
-        <h2 class="h3">Sistema de Diseño Obelisco</h2>
+        <h2 class="h4 mb-3">Sistema de Diseño Obelisco</h2>
         <hr />
         <p>
           Es el sistema de diseño para productos digitales del Gobierno de la
@@ -82,28 +82,10 @@
           estándares de usabilidad para lograr una experiencia ideal para las
           personas usuarias.
         </p>
-        <div class="card-deck max-cards-1 mt-4">
-          <o-card
-            title="Storybook"
-            description="Herramienta donde está disponibilizada la construcción HTML y clases utilizadas de los componentes de Obelisco."
-            link="https://gcba.github.io/Obelisco/"
-            icon="bx bx-code-alt"
-            [isHorizontal]="true"
-            [isBordered]="true"
-          ></o-card>
-          <o-card
-            title="Sistema y estándares"
-            description="Características que deben cumplir los desarrollos digitales para el Gobierno de la Ciudad de Buenos Aires impulsados por la Agencia de Sistemas de Información."
-            link="https://gcba.github.io/estandares/componentes/acceso/"
-            icon="bx bx-notepad"
-            [isHorizontal]="true"
-            [isBordered]="true"
-          ></o-card>
-        </div>
       </section>
 
       <section class="mb-3 pt-5 section-intro" id="section2">
-        <h2>Cómo usar NgxObelisco</h2>
+        <h2 class="h4 mb-3">Cómo usar NgxObelisco</h2>
         <hr />
         <p>
           NgxObelisco se distribuye por medio del
@@ -116,33 +98,34 @@
           poder actualizarla fácilmente.
         </p>
         <div>
-          <h3>Instalación</h3>
+          <h3 class="text-xl text-body-secondary mb-2">Instalación</h3>
           <p>
             Para instalarlo en un proyecto que ya usa npm, hay que ejecutar:
           </p>
           <div class="d-flex flex-column align-items-end p-0" appClipboard>
             <button
-              class="btn btn-sm btn-outline-link btn-clipboard btn-icon"
+              class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"
             ></button>
             <code highlight-js lang="'bash'">{{ ngxObelisco }}</code>
           </div>
         </div>
         <br />
         <div>
-          <h3>Requerimientos</h3>
+          <h3 class="text-xl text-body-secondary mb-2">Requerimientos</h3>
           <p>
-            <strong>Node.js</strong>: Se recomienda utilizar la versión ^18.X.X.
+            <strong>Node.js</strong>: Se recomienda utilizar la versión <code>^18.X.X</code>.
           </p>
           <p>
-            <strong>Angular</strong>: Este proyecto requiere Angular 17.
+            <strong>Angular</strong>: Este proyecto requiere Angular <code>17</code>.
             Asegúrate de tener Angular 17.X.X instalado globalmente o
             especificado en tu proyecto.
           </p>
         </div>
         <div>
-          <blockquote class="mx-0 mb-0">
-            <p>
-              <strong>Importante</strong><br />
+          
+          <blockquote>
+            <p> 
+              <strong>Importante</strong> <br>
               Revisá las
               <a
                 href="https://asijira-confluence.buenosaires.gob.ar/display/ASI/Versiones++y+Herramientas+aceptadas+por+la+ASI"
@@ -159,29 +142,29 @@
       </section>
 
       <section class="mb-3 pt-5 section-intro" id="section3">
-        <h2>Importar módulos</h2>
+        <h2 class="h4 mb-3">Importar módulos</h2>
         <hr />
-        <p>Además de importar componente por componente como por ejemplo:</p>
+        <p class="mb-2">Además de importar componente por componente como por ejemplo:</p>
         <div class="d-flex flex-column align-items-end p-0" appClipboard>
           <button
-            class="btn btn-sm btn-outline-link btn-clipboard btn-icon"
+            class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"
           ></button>
           <code highlight-js lang="'typescript'">{{ accessImport }}</code>
         </div>
         <p class="mb-0">Ó Puedes usar este que trae todos los módulos:</p>
         <div class="d-flex flex-column align-items-end p-0" appClipboard>
           <button
-            class="btn btn-sm btn-outline-link btn-clipboard btn-icon"
+            class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"
           ></button>
           <code highlight-js lang="'typescript'">{{ ngxImport }}</code>
         </div>
       </section>
 
       <section class="mb-3 pt-5 section-intro" id="section4">
-        <h2>Iconografía</h2>
+        <h2 class="h4 mb-3">Iconografía</h2>
         <hr />
         <div class="mt-4">
-          <h3>Boxicons</h3>
+          <h3 class="text-xl text-body-secondary mb-2">Boxicons</h3>
           <p>
             Obelisco utiliza la librería de <strong>Boxicons</strong> que se
             puede instalar de las siguientes maneras:
@@ -189,7 +172,7 @@
           <p>Utilizando el paquete npm:</p>
           <div class="d-flex flex-column align-items-end p-0" appClipboard>
             <button
-              class="btn btn-sm btn-outline-link btn-clipboard btn-icon"
+              class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"
             ></button>
             <code highlight-js lang="'bash'">{{ boxicons }}</code>
           </div>
@@ -197,7 +180,7 @@
           <p>Importando en el archivo angular.json de la siguiente manera:</p>
           <div class="d-flex flex-column align-items-end p-0" appClipboard>
             <button
-              class="btn btn-sm btn-outline-link btn-clipboard btn-icon"
+              class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"
             ></button>
             <code highlight-js lang="'css'">{{ iconImport }}</code>
           </div>
@@ -207,13 +190,13 @@
           </p>
           <div class="d-flex flex-column align-items-end p-0" appClipboard>
             <button
-              class="btn btn-sm btn-outline-link btn-clipboard btn-icon"
+              class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"
             ></button>
             <code highlight-js>{{ boxiconsCDN }}</code>
           </div>
         </div>
         <div class="mt-5">
-          <h3>Material Icons Rounded</h3>
+          <h3 class="text-xl text-body-secondary mb-2">Material Symbols Rounded</h3>
           <p>
             Obelisco utiliza la librería de
             <strong>Material Icons Rounded</strong> que se puede instalar de las
@@ -222,17 +205,24 @@
           <p>Utilizando el paquete npm:</p>
           <div class="d-flex flex-column align-items-end p-0" appClipboard>
             <button
-              class="btn btn-sm btn-outline-link btn-clipboard btn-icon"
+              class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"
             ></button>
             <code highlight-js lang="'bash'">{{ materialIcons }}</code>
           </div>
 
+          <p>Es importante que incluyas el import a Material Symbols en tu hoja de estilos si lo usas via NPM, asi como también los estilos referidos al fill de los íconos.</p>
+          <div class="d-flex flex-column align-items-end p-0" appClipboard>
+            <button
+              class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"
+            ></button>
+            <code highlight-js lang="'bash'">{{ materialIconsCss }}</code>
+          </div>
           <p>
             Para utilizarlas con su CDN podemos hacerlo de la siguiente forma:
           </p>
           <div class="d-flex flex-column align-items-end p-0" appClipboard>
             <button
-              class="btn btn-sm btn-outline-link btn-clipboard btn-icon"
+              class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"
             ></button>
             <code highlight-js>{{ materialIconsCDN }}</code>
           </div>
@@ -240,7 +230,7 @@
       </section>
 
       <section class="mb-3 pt-5 section-intro" id="section5">
-        <h2>Tipografía</h2>
+        <h2 class="h4 mb-3">Tipografía</h2>
         <hr />
         <p>
           Obelisco requiere las tipografías <strong>Nunito</strong> y
@@ -249,7 +239,7 @@
         </p>
         <div class="d-flex flex-column align-items-end p-0" appClipboard>
           <button
-            class="btn btn-sm btn-outline-link btn-clipboard btn-icon"
+            class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"
           ></button>
           <code highlight-js>{{ typography }}</code>
         </div>
@@ -267,12 +257,12 @@
         </section> -->
 
       <section class="mb-3 pt-5 section-intro" id="section6">
-        <h2>Javascript</h2>
+        <h2 class="h4 mb-3">Javascript</h2>
         <hr />
         <p>
-          Como NgxObelisco está construido sobre Obelisco y Bootstrap 4,
+          Como NgxObelisco está construido sobre Obelisco v.2 y Bootstrap 5,
           <a
-            href="https://getbootstrap.com/docs/4.6/getting-started/introduction/#js"
+            href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
             target="_blank"
             rel="noreferrer"
             >debemos tener esas dependencias</a
@@ -280,7 +270,7 @@
         </p>
         <div class="d-flex flex-column align-items-end p-0" appClipboard>
           <button
-            class="btn btn-sm btn-outline-link btn-clipboard btn-icon"
+            class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"
           ></button>
           <code highlight-js>{{ js }}</code>
         </div>
@@ -293,7 +283,7 @@
       </section>
 
       <section class="mb-3 pt-5 section-intro pb-5" id="section7">
-        <h2>Mantenimiento y colaboración</h2>
+        <h2 class="h4 mb-3">Mantenimiento y colaboración</h2>
         <hr />
         <p>
           El mantenimiento y desarrollo de Obelisco lo hace el equipo de la

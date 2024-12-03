@@ -2,7 +2,7 @@
   <app-viewer title="Con botones y directiva" id="example-directive">
     <app-progress-bar-demo component></app-progress-bar-demo>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
-      <button class="btn btn-sm btn-outline-link btn-clipboard btn-icon"></button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"></button>
       <code highlight-js>
         {{ exampleButtons }}
       </code>
@@ -16,14 +16,14 @@
       <o-button type="link" size="sm" (click)="nextStep()">Siguiente</o-button>
     </div>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
-      <button class="btn btn-sm btn-outline-link btn-clipboard btn-icon"></button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"></button>
       <code highlight-js>
         {{ exampleFuncionalityHTML }}
       </code>
     </div>
 
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-ts>
-      <button class="btn btn-sm btn-outline-link btn-clipboard btn-icon"></button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"></button>
       <code highlight-js [lang]="'ts'">
         {{ exampleFuncionalityTS }}
       </code>
@@ -32,13 +32,13 @@
 
   <app-viewer title="Simple">
     <div component class="mb-5">
-      <o-progress-bar type="info" [currentStep]="5"></o-progress-bar>
+      <o-progress-bar [currentStep]="5"></o-progress-bar>
     </div>
     <div component>
       <o-progress-bar type="success" [currentStep]="4"></o-progress-bar>
     </div>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
-      <button class="btn btn-sm btn-outline-link btn-clipboard btn-icon"></button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"></button>
       <code highlight-js>
         {{ exampleNoSteps }}
       </code>

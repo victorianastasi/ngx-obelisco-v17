@@ -1,16 +1,16 @@
 export type Types = 'primary' | 'success' | 'danger' | 'info';
 
-export type AlertTypes = 'primary' | 'success' | 'danger' | 'info';
+export type AlertTypes = 'warning' | 'success' | 'danger' | 'info';
 
 export type StatusMessageTypes = Types | 'institutional';
 
-export type SpinnerTypes = Types | 'secondary' | 'dark' | 'light';
+export type SpinnerTypes = 'primary' | 'secondary' | 'tertiary' | 'success' | 'danger' | 'light' | 'dark';
 
 export type BadgeTypes = Types | 'secondary';
 
-export type ProgressBarTypes = 'info' | 'success';
+export type ProgressBarTypes = 'primary' | 'success';
 
-export type ButtonTypes = 'primary' | 'secondary' | 'success' | 'danger' | 'link';
+export type ButtonTypes = 'primary' | 'secondary' | 'tertiary' | 'success' | 'danger' | 'light' | 'link' ;
 
 export type CromaticTypes =
   | 'sky'

@@ -15,7 +15,7 @@ export const SPINNER_DATA_SOURCE: DataSource[] = [
   {
     name: { data: '@Input() <br/> type: SpinnerTypes', customClasses: '' },
     description: {
-      data: 'Se utiliza para establecer el color del spinner. Por defecto es info.',
+      data: 'Se utiliza para establecer el color del spinner. Por defecto es primary.',
       customClasses: '',
     },
   },
@@ -33,16 +33,23 @@ export const SPINNER_DATA_SOURCE: DataSource[] = [
       customClasses: '',
     },
   },
+  {
+    name: { data: '@Input() <br/> description: string', customClasses: '' },
+    description: {
+      data: 'Se utiliza para establecer el texto que acompañe al spinner.',
+      customClasses: '',
+    },
+  },
 ];
 
 export const SPINNER_COLORS = `
-  type SpinnerTypes = 'primary' | 'secondary' | 'success' | 'danger' | 'info' | 'dark' | 'light';
+  type SpinnerTypes = 'primary' | 'secondary' | 'tertiary' | 'success' | 'danger' | 'light' | 'dark';
 `;
 
 export const SPINNER_EXAMPLE_COLORS = `
 <o-spinner></o-spinner>
-<o-spinner type="primary"></o-spinner>
 <o-spinner type="secondary"></o-spinner>
+<o-spinner type="tertiary"></o-spinner>
 <o-spinner type="success"></o-spinner>
 <o-spinner type="danger"></o-spinner>
 <o-spinner type="light"></o-spinner>
@@ -56,12 +63,11 @@ export const SPINNER_EXAMPLE_SIZES = `
 `;
 
 export const SPINNER_EXAMPLE_BLOCK = `
-<div style="width: 64px">
+<div style="width: 96px">
   <o-spinner [isExpandable]="true"></o-spinner>
 </div>
 `;
 
 export const SPINNER_EXAMPLE_MESSAGE = `
-<o-spinner size="lg"></o-spinner>
-<small class="mt-2">Cargando...</small>
+<o-spinner size="lg" description="Cargando..."></o-spinner>
 `;

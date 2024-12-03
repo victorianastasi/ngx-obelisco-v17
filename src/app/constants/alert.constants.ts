@@ -42,7 +42,7 @@ export const ALERT_DATA_SOURCE: DataSource[] = [
 ];
 
 export const ALERT_TYPES = `
-  type AlertTypes = 'primary' | 'success' | 'danger' | 'info';
+  type AlertTypes = 'warning' | 'success' | 'danger' | 'info';
 `;
 
 export const ALERT_LIST_INTERFACE = `

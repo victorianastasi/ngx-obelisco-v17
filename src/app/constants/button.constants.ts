@@ -127,7 +127,7 @@ export const BUTTON_DATA_SOURCE: DataSource[] = [
 ];
 
 export const BUTTON_TYPES = `
-  type ButtonTypes = 'primary' | 'secondary' | 'success' | 'danger' | 'link' ;
+  type ButtonTypes = 'primary' | 'secondary' | 'tertiary' | 'success' | 'danger' | 'light' ;
 `;
 export const BUTTON_SIZES_TYPE = `
   type ButtonSizes = "xs" | "sm" | "md" | "lg";
@@ -137,20 +137,21 @@ export const BUTTON_SIZES_TYPE = `
 export const BUTTON_TYPES_SOLID = `
 <o-button (click)="alert()">Botón</o-button>
 <o-button type="secondary" (click)="alert()">Botón</o-button>
+<o-button type="tertiary" (click)="alert()">Botón</o-button>
 <o-button type="success" (click)="alert()">Botón</o-button>
 <o-button type="danger" (click)="alert()">Botón</o-button>
-<o-button type="link" (click)="alert()">Botón</o-button>
+<o-button type="light" (click)="alert()">Botón</o-button>
 `;
 export const BUTTON_TYPES_BORDER = `
 <o-button (click)="alert()" [isOutline]="true">Botón</o-button>
 <o-button type="secondary" (click)="alert()" [isOutline]="true">Botón</o-button>
+<o-button type="tertiary" (click)="alert()" [isOutline]="true">Botón</o-button>
 <o-button type="success" (click)="alert()" [isOutline]="true">Botón</o-button>
 <o-button type="danger" (click)="alert()" [isOutline]="true">Botón</o-button>
-<o-button type="link" (click)="alert()" [isOutline]="true">Botón</o-button>
+<o-button type="light" (click)="alert()" [isOutline]="true">Botón</o-button>
 `;
 export const BUTTON_TYPES_LINK = `
 <o-button link="https://www.google.com/">Enlace</o-button>
-<o-button link="https://www.google.com/" [isOutline]="true">Enlace</o-button>
 `;
 export const BUTTON_TYPES_TS = `
 import { Component } from '@angular/core';
@@ -172,66 +173,105 @@ export const BUTTON_SIZES = `
 <o-button size="lg">Botón</o-button>
 `;
 
+export const BUTTON_DISABLED = `
+<o-button [isDisabled]="true">Botón</o-button>
+<o-button type="secondary" [isDisabled]="true">Botón</o-button>
+<o-button type="tertiary" [isDisabled]="true">Botón</o-button>
+<o-button type="success" [isDisabled]="true">Botón</o-button>
+<o-button type="danger" [isDisabled]="true">Botón</o-button>
+<o-button type="light" [isDisabled]="true">Botón</o-button>
+`;
 export const BUTTON_BLOCK = `
 <o-button [isExpandable]="true">Expandible</o-button>
 `;
 
 export const BUTTON_ICON = `
+// Botón con texto e icono a la izquierda
 <o-button size="sm">
-  <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>
-  Botón
+  <i class="bx bx-plus o-icon"></i> Botón
 </o-button>
 <o-button>
-  <i class="bx bxs-info-circle o-icon"></i>
-  Botón
+  <i class="bx bx-plus o-icon"></i> Botón
 </o-button>
 <o-button size="lg">
-  <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>
-  Botón
+  <i class="bx bx-plus o-icon"></i> Botón
 </o-button>
 
+// Botón con texto e icono a la derecha
+<o-button size="sm">
+  Botón
+  <span class="material-symbols-rounded o-icon" aria-hidden="true"> arrow_forward </span>
+</o-button>
+<o-button>
+  Botón
+  <span class="material-symbols-rounded o-icon" aria-hidden="true"> arrow_forward </span>
+</o-button>
+<o-button size="lg">
+  Botón
+  <span class="material-symbols-rounded o-icon" aria-hidden="true"> arrow_forward </span>
+</o-button>
+
+// Botón sin texto, con icono
 <o-button size="sm" ariaLabel="Botón">
-  <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">add</span>
 </o-button>
 <o-button ariaLabel="Botón">
-  <i class="bx bxs-info-circle o-icon"></i>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">add</span>
 </o-button>
 <o-button size="lg" ariaLabel="Botón">
-  <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">add</span>
 </o-button>
 `;
 
 export const BUTTON_SPINNER = `
-<o-button>
-  <o-spinner type="light" size="sm"></o-spinner> Botón
+<o-button [isDisabled]="true">
+  <o-spinner type="primary" size="sm"></o-spinner>
+  Botón
 </o-button>
-<o-button type="secondary">
-  <o-spinner type="light" size="sm"></o-spinner> Botón
+<o-button type="secondary" [isDisabled]="true">
+  <o-spinner type="secondary" size="sm"></o-spinner>
+  Botón
 </o-button>
-<o-button type="success">
-  <o-spinner type="light" size="sm"></o-spinner> Botón
+<o-button type="tertiary" [isDisabled]="true">
+  <o-spinner type="tertiary" size="sm"></o-spinner>
+  Botón
 </o-button>
-<o-button type="danger">
-  <o-spinner type="light" size="sm"></o-spinner> Botón
+<o-button type="success" [isDisabled]="true">
+  <o-spinner type="success" size="sm"></o-spinner>
+  Botón
 </o-button>
-<o-button type="link">
-  <o-spinner type="info" size="sm"></o-spinner> Botón
+<o-button type="danger" [isDisabled]="true">
+  <o-spinner type="danger" size="sm"></o-spinner>
+  Botón</o-button
+>
+<o-button type="light" [isDisabled]="true">
+  <o-spinner type="light" size="sm"></o-spinner>
+  Botón
 </o-button>
 
-<o-button [isOutline]="true">
-  <o-spinner type="primary" size="sm"></o-spinner> Botón
+<o-button [isOutline]="true" [isDisabled]="true">
+  <o-spinner type="primary" size="sm"></o-spinner>
+  Botón
 </o-button>
-<o-button type="secondary" [isOutline]="true">
-  <o-spinner type="secondary" size="sm"></o-spinner> Botón
+<o-button type="secondary" [isOutline]="true" [isDisabled]="true">
+  <o-spinner type="secondary" size="sm"></o-spinner>
+  Botón
 </o-button>
-<o-button type="success" [isOutline]="true">
-  <o-spinner type="success" size="sm"></o-spinner> Botón
+<o-button type="tertiary" [isOutline]="true" [isDisabled]="true">
+  <o-spinner type="tertiary" size="sm"></o-spinner>
+  Botón
 </o-button>
-<o-button type="danger" [isOutline]="true">
-  <o-spinner type="danger" size="sm"></o-spinner> Botón
+<o-button type="success" [isOutline]="true" [isDisabled]="true">
+  <o-spinner type="success" size="sm"></o-spinner>
+  Botón
 </o-button>
-<o-button type="link" [isOutline]="true">
-  <o-spinner type="info" size="sm"></o-spinner> Botón
+<o-button type="danger" [isOutline]="true" [isDisabled]="true">
+  <o-spinner type="danger" size="sm"></o-spinner>
+  Botón</o-button
+>
+<o-button type="light" [isOutline]="true" [isDisabled]="true">
+  <o-spinner type="light" size="sm"></o-spinner>
+  Botón
 </o-button>
 `;
 export const BUTTON_SIZE_XS = `

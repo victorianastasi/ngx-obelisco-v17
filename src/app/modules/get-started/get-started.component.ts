@@ -15,7 +15,14 @@ npm install boxicons
 `;
 
   public materialIcons = `
-npm install material-icons@latest
+npm install material-symbols@latest
+`;
+  public materialIconsCss = `
+@import "material-symbols/index.css";
+
+.material-symbols-rounded {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
 `;
 
   public boxiconsCDN = `
@@ -26,9 +33,8 @@ npm install material-icons@latest
 `;
 
   public materialIconsCDN = `
-<link
-  href="https://fonts.googleapis.com/icon?
-    family=Material+Icons+Round"
+<link 
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" 
   rel="stylesheet"
 />
 `;
@@ -48,21 +54,17 @@ npm install material-icons@latest
 `;
 
   public js = `
-<script
-  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1
-        /dist/jquery.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/
-        zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-  crossorigin="anonymous"
-><script/>
+<script 
+  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+  crossOrigin="anonymous">
+</script>
 
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2
-        /dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/
-        2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-  crossorigin="anonymous"
-><script/>
+<script 
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+  integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
+  crossOrigin="anonymous">
+</script>
 `;
 
   public iconImport = `
@@ -78,12 +80,12 @@ npm install material-icons@latest
 ]`;
 
   public accessImport = `
-import { OAccessModule } from '@gcba/ngx-obelisco/access';
-import { OAlertModule } from '@gcba/ngx-obelisco/alert';
+import { OButtonModule } from '@gcba/ngx-obelisco-v17/button';
+import { OAlertModule } from '@gcba/ngx-obelisco-v17/alert';
   `;
 
   public ngxImport = `
-import { NgxObeliscoModule } from '@gcba/ngx-obelisco/ngx-obelisco';
+import { NgxObeliscoModule } from '@gcba/ngx-obelisco-v17/ngx-obelisco';
   `;
 
   currentSection = 'section1';

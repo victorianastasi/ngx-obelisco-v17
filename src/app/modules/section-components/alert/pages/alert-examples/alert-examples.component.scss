@@ -1,5 +1,6 @@
 .alert-container {
-  o-alert {
-    margin-bottom: 1rem;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 728px;
 }

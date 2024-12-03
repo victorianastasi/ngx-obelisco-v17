@@ -7,7 +7,8 @@ import { SpinnerTypes, Sizes } from 'ngx-obelisco-v17/core/models';
   styleUrls: ['./o-spinner.component.scss'],
 })
 export class OSpinnerComponent {
-  @Input() public type: SpinnerTypes = 'info';
+  @Input() public type: SpinnerTypes = 'primary';
   @Input() public size: Sizes = 'md';
   @Input() public isExpandable: boolean = false;
+  @Input() public description: string = "";
 }

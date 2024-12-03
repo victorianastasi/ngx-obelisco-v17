@@ -2,7 +2,7 @@
   <app-viewer title="Solo legales">
     <o-footer component [isPhoneSectionHidden]="true" [isNetworkSectionHidden]="true"></o-footer>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
-      <button class="btn btn-sm btn-outline-link btn-clipboard">Copiar</button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard">Copiar</button>
       <code highlight-js>{{ exampleLinksHTML }}</code>
     </div>
   </app-viewer>
@@ -10,7 +10,7 @@
   <app-viewer title="Completo">
     <o-footer component></o-footer>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
-      <button class="btn btn-sm btn-outline-link btn-clipboard">Copiar</button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard">Copiar</button>
       <code highlight-js>{{ exampleAllHTML }}</code>
     </div>
   </app-viewer>
@@ -21,7 +21,7 @@
       <button class="btn btn-secondary">No me sirvió</button>
     </o-footer>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
-      <button class="btn btn-sm btn-outline-link btn-clipboard">Copiar</button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard">Copiar</button>
       <code highlight-js>{{ exampleIndicatorHTML }}</code>
     </div>
   </app-viewer>
@@ -34,11 +34,11 @@
       [linkCustomItems]="linkCustomList"
     ></o-footer>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
-      <button class="btn btn-sm btn-outline-link btn-clipboard">Copiar</button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard">Copiar</button>
       <code highlight-js>{{ exampleCustomListHTML }}</code>
     </div>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-ts>
-      <button class="btn btn-sm btn-outline-link btn-clipboard">Copiar</button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard">Copiar</button>
       <code highlight-js [lang]="'ts'">{{ exampleCustomListTS }}</code>
     </div>
   </app-viewer>

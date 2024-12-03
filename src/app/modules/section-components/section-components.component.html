@@ -1,10 +1,35 @@
 <section class="section-components">
   <div class="sidebar">
-    <o-nav-vertical [navVertItems]="componentsNavigation"></o-nav-vertical>
+    <nav aria-label="Navegación vertical">
+      <ul class="nav flex-column nav-pills">
+        <ng-container *ngFor="let item of componentsNavigation">
+          <li class="nav-item">
+            <a class="nav-link nav-link-lg" [routerLink]="item.route" routerLinkActive="active">
+              <span>{{item.title}}</span>
+            </a>
+          </li>
+        </ng-container>
+      </ul>
+
+      <br>
+
+      <ul class="nav flex-column nav-pills">
+        <ng-container *ngFor="let item of othersNavigation">
+          <li class="nav-item">
+            <a class="nav-link nav-link-lg" [routerLink]="item.route" routerLinkActive="active">
+              <span>{{item.title}}</span>
+            </a>
+          </li>
+        </ng-container>
+      </ul>
+    </nav>
+
+    <!-- <o-nav-vertical [navVertItems]="componentsNavigation"></o-nav-vertical>
     <br />
     <o-nav-vertical [navVertItems]="iconsNavigation"></o-nav-vertical>
-    <br />
+    <br>
     <o-nav-vertical [navVertItems]="othersNavigation"></o-nav-vertical>
+    -->
   </div>
   <div class="component-description-content">
     <h1 class="h2 title-component" #componentTitle>{{ title }}</h1>
@@ -17,7 +42,22 @@
 
     <ng-template #componentTemplate>
       <div class="container mt-5">
-        <div class="card-deck max-cards-3 card-column">
+        <div class="access-items-3">
+          <ng-container *ngFor="let component of componentsNavigation">
+            <div class="col">
+              <a 
+                class="list-group-item item-sm" 
+                [routerLink]="component.route"
+              >
+                <div class="access-content">
+                  <span class="access-title">{{ component.title }}</span>
+                </div>
+              </a>
+            </div>
+          </ng-container>
+        </div>
+        
+        <!-- <div class="card-deck max-cards-3 card-column">
           <o-card
             *ngFor="let component of componentsNavigation"
             [title]="component.title"
@@ -26,7 +66,7 @@
             [isBordered]="true"
           >
           </o-card>
-        </div>
+        </div> -->
       </div>
     </ng-template>
   </div>

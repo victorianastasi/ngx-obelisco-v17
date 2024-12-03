@@ -2,11 +2,11 @@
   <app-viewer title="Sin separadores" [isNavCode]="true">
     <o-table [isScrollable]="true" component [columns]="columns" [dataSource]="dataSource"></o-table>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
-      <button class="btn btn-sm btn-outline-link btn-clipboard btn-icon"></button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"></button>
       <code highlight-js>{{ exampleNormalHTML }}</code>
     </div>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-ts>
-      <button class="btn btn-sm btn-outline-link btn-clipboard btn-icon"></button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"></button>
       <code highlight-js [lang]="'ts'">{{ exampleNormalTS }}</code>
     </div>
   </app-viewer>
@@ -20,11 +20,11 @@
       [isBordered]="true"
     ></o-table>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
-      <button class="btn btn-sm btn-outline-link btn-clipboard btn-icon"></button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"></button>
       <code highlight-js>{{ exampleBorderedHTML }}</code>
     </div>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-ts>
-      <button class="btn btn-sm btn-outline-link btn-clipboard btn-icon"></button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"></button>
       <code highlight-js [lang]="'ts'">{{ exampleNormalTS }}</code>
     </div>
   </app-viewer>
@@ -32,11 +32,11 @@
   <app-viewer title="Con patron cebra" [isNavCode]="true">
     <o-table [isScrollable]="true" component [columns]="columns" [dataSource]="dataSource" [isStriped]="true"></o-table>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
-      <button class="btn btn-sm btn-outline-link btn-clipboard btn-icon"></button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"></button>
       <code highlight-js>{{ exampleStripedHTML }}</code>
     </div>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-ts>
-      <button class="btn btn-sm btn-outline-link btn-clipboard btn-icon"></button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"></button>
       <code highlight-js [lang]="'ts'">{{ exampleNormalTS }}</code>
     </div>
   </app-viewer>
@@ -65,11 +65,11 @@
     </div>
 
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
-      <button class="btn btn-sm btn-outline-link btn-clipboard btn-icon"></button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"></button>
       <code highlight-js>{{ exampleSelectableHTML }}</code>
     </div>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-ts>
-      <button class="btn btn-sm btn-outline-link btn-clipboard btn-icon"></button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"></button>
       <code highlight-js [lang]="'ts'">{{ exampleSelectableTS }}</code>
     </div>
   </app-viewer>

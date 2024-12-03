@@ -2,12 +2,12 @@
   <app-viewer title="Simple">
     <div class="alert-container" component>
       <o-alert>Esta es la descripción de una alerta de información.</o-alert>
-      <o-alert type="primary">Esta es la descripción de una alerta de advertencia.</o-alert>
+      <o-alert type="warning">Esta es la descripción de una alerta de advertencia.</o-alert>
       <o-alert type="success">Esta es la descripción de una alerta de éxito.</o-alert>
       <o-alert type="danger">Esta es la descripción de una alerta de error.</o-alert>
     </div>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
-      <button class="btn btn-sm btn-outline-link btn-clipboard">Copiar</button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard">Copiar</button>
       <code highlight-js>
         {{ exampleColors }}
       </code>
@@ -19,7 +19,7 @@
       <o-alert [isDismissible]="true">Esta es la descripción de una alerta de información.</o-alert>
     </div>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
-      <button class="btn btn-sm btn-outline-link btn-clipboard btn-icon"></button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"></button>
       <code highlight-js>
         {{ exampleDismissible }}
       </code>
@@ -34,7 +34,7 @@
       </o-alert>
     </div>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
-      <button class="btn btn-sm btn-outline-link btn-clipboard">Copiar</button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard">Copiar</button>
       <code highlight-js>
         {{ exampleHighlight }}
       </code>
@@ -50,7 +50,7 @@
       </o-alert>
     </div>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
-      <button class="btn btn-sm btn-outline-link btn-clipboard">Copiar</button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard">Copiar</button>
       <code highlight-js>
         {{ exampleHighlightLink }}
       </code>
@@ -70,13 +70,13 @@
       </o-alert>
     </div>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
-      <button class="btn btn-sm btn-outline-link btn-clipboard">Copiar</button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard">Copiar</button>
       <code highlight-js>
         {{ exampleListsHtml }}
       </code>
     </div>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-ts>
-      <button class="btn btn-sm btn-outline-link btn-clipboard btn-icon"></button>
+      <button class="btn btn-sm btn-outline-tertiary btn-clipboard btn-icon"></button>
       <code highlight-js [lang]="'ts'">
         {{ exampleListsTs }}
       </code>
