@@ -54,7 +54,7 @@ En lugar de mostrar cada importación individualmente, a continuación se presen
   <body>
     <!-- Contenido de tu aplicación -->
 
-    <!-- Importar jQuery desde CDN -->
+    <!-- Importar popper desde CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossOrigin="anonymous"></script>
 
     <!-- Importar Bootstrap desde CDN -->
@@ -68,7 +68,7 @@ En lugar de mostrar cada importación individualmente, a continuación se presen
 Además de importar componente por componente como por ejemplo:
 
 ```js
-import { OAccessModule } from "ngx-obelisco-v17/access";
+import { OButtonModule } from 'ngx-obelisco-v17/button';
 import { OAlertModule } from "ngx-obelisco-v17/alert";
 ```
 
