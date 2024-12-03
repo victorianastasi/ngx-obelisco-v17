@@ -35,14 +35,15 @@
       &::-webkit-scrollbar-thumb {
         border-radius: 10px;
         background: rgba(0, 0, 0, 0.2);
+        background: #38485c;
       }
 
       &::-webkit-scrollbar-thumb:hover {
-        background: rgba(150, 150, 150, 0.9);
+        background: #38485c;
       }
 
       &::-webkit-scrollbar-thumb:active {
-        background: rgba(150, 150, 150, 0.9);
+        background: #38485c;
       }
     }
 
