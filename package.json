@@ -22,6 +22,7 @@
     "@ngneat/helipopper": "^8.0.3",
     "ngx-highlight-js": "^16.1.0",
     "rxjs": "~7.8.0",
+    "semantic-release": "^19.0.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },
