@@ -5,30 +5,28 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Configuración inicial
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Configurar Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      # Instalar dependencias
       - name: Install Dependencies
         run: npm ci
 
-      # Construir la aplicación Angular
       - name: Build Angular App
         run: npm run build -- --configuration production
 
-      # Desplegar a GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
