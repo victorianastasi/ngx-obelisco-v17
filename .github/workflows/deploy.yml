@@ -25,6 +25,7 @@ jobs:
           npm ci
           npm run deploy
       - name: Deploy 🚀
+        uses: victorianastasi/ngx-obelisco-v17@v1
         with:
           GITHUB_TOKEN: ${{ secrets.GH_ANGULAR_TOKEN }}
           branch: gh-pages
