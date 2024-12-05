@@ -3,26 +3,23 @@
     <div component class="d-container-1">
       <div class="mb-5">
         <o-dropdown-navigation
-          dataTarget="dropdown1"
           [dropNavItems]="dropdownItemsIcons"
           title="Desplegable"
-          iconRight="expand_more"
-          [isAnimatedIconRight]="true"
         ></o-dropdown-navigation>
       </div>
       <div class="mb-5">
         <o-dropdown-navigation
-          dataTarget="dropdown2"
           [dropNavItems]="dropdownItemsIcons"
           title="Desplegable"
-          iconLeft="menu"
+          iconLeft="bx bx-plus"
         ></o-dropdown-navigation>
       </div>
       <div class="mb-5">
         <o-dropdown-navigation
-          dataTarget="dropdown3"
-          [dropNavItems]="dropdownItemsIcons"
+          [dropNavItems]="dropdownItemsIcons3Option"
           iconLeft="menu"
+          iconRight="none"
+          ariaLabel="Menú"
         ></o-dropdown-navigation>
       </div>
     </div>
@@ -39,19 +36,13 @@
   <app-viewer title="Disposición" [isNavCode]="true">
     <div component class="d-container-2 mb-2">
       <o-dropdown-navigation
-        dataTarget="dropdown4"
         [dropNavItems]="dropdownItemsLeft"
         title="Desplegable Izq."
-        iconRight="expand_more"
-        [isAnimatedIconRight]="true"
       ></o-dropdown-navigation>
       <o-dropdown-navigation
-        dataTarget="dropdown5"
         [dropNavItems]="dropdownItemsRight"
-        iconLeft="expand_more"
-        title="Desplegable Der."
         [isPositionRight]="true"
-        [isAnimatedIconRight]="true"
+        title="Desplegable Der."
       ></o-dropdown-navigation>
     </div>
     <div appClipboard class="d-flex flex-column align-items-end p-0" component-html>
@@ -67,7 +58,6 @@
   <app-viewer title="Con cascada" [isNavCode]="true">
     <div component class="d-container-3 mb-2">
       <o-dropdown-navigation
-        dataTarget="dropdown6"
         [dropNavItems]="dropdownItemsWithSubitems"
         title="Desplegable"
       ></o-dropdown-navigation>
