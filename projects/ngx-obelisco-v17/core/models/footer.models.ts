@@ -6,6 +6,7 @@ export interface Network {
   title: string;
   src: string;
   icon?: string;
+  customClass?: string;
 }
 export interface Link {
   title: string;

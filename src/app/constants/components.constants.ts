@@ -74,11 +74,7 @@ export const COMPONENTS_NAVIGATION = [
   //   image: { src: 'assets/component-cards/Tarjetas.svg' },
   //   route: '/components/card'
   // },
-  // {
-  //   title: 'Footer',
-  //   image: { src: 'assets/component-cards/Footer.svg' },
-  //   route: '/components/footer'
-  // },
+  
   {
     title: 'Banner',
     image: { src: 'assets/component-cards/banner.jpg' },
@@ -94,6 +90,22 @@ export const COMPONENTS_NAVIGATION = [
     image: { src: 'assets/component-cards/boton.jpg' },
     route: '/components/button'
   },
+  {
+    title: 'Desplegables',
+    image: { src: 'assets/component-cards/Desplegable.svg' },
+    route: '/components/dropdown/dropdown-navigation',
+    // children: [
+    //   {
+    //     title: 'De navegación',
+    //     route: '/components/dropdown/dropdown-navigation'
+    //   },
+    //   {
+    //     title: 'De selección',
+    //     route: '/components/dropdown/dropdown-selection'
+    //   }
+    // ]
+  },
+  
   // {
   //   title: 'Colapsable',
   //   image: { src: 'assets/component-cards/Colapsables.svg' },
@@ -153,31 +165,23 @@ export const COMPONENTS_NAVIGATION = [
   //   image: { src: 'assets/component-cards/PasosDeUnFormulario.svg' },
   //   route: '/components/steps-form'
   // },
-  // {
-  //   title: 'Desplegables',
-  //   image: { src: 'assets/component-cards/Desplegable.svg' },
-  //   route: '/components/dropdown',
-  //   children: [
-  //     {
-  //       title: 'De navegación',
-  //       route: '/components/dropdown/dropdown-navigation'
-  //     },
-  //     {
-  //       title: 'De selección',
-  //       route: '/components/dropdown/dropdown-selection'
-  //     }
-  //   ]
-  // },
+ 
   // {
   //   title: 'Mensaje de estado',
   //   image: { src: 'assets/component-cards/MensajeDeEstado.svg' },
   //   route: '/components/status-message'
   // },
   {
+    title: 'Pie de página (Footer)',
+    image: { src: 'assets/component-cards/Footer.svg' },
+    route: '/components/footer'
+  },
+  {
     title: 'Spinner',
     image: { src: 'assets/component-cards/Spinner.svg' },
     route: '/components/spinner'
   },
+  
   // {
   //   title: 'Tooltip',
   //   image: { src: 'assets/component-cards/Tooltip.svg' },
