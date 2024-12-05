@@ -1,8 +1,5 @@
 import { Component, Input, OnChanges } from '@angular/core';
-
-import { Access, AccessCategory, AccessList } from "../../core/models/access.models"
-
-
+import { Access, AccessCategory, AccessList } from 'ngx-obelisco-v17/core/models';
 
 @Component({
   selector: 'o-access-list',
