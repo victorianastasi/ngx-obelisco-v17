@@ -33,6 +33,9 @@ jobs:
           cd dist/ngx-obelisco-v17
           npm pack
 
+      - name: Set up npm authentication
+        run: npm set //registry.npmjs.org/:_authToken=${{ secrets.TOKEN_NPM }}
+
       - name: Publish to NPM
         run: |
           cd dist/ngx-obelisco-v17
