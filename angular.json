@@ -110,7 +110,8 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-obelisco-v17/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-obelisco-v17/tsconfig.lib.prod.json",
+              "baseHref": "projects/ngx-obelisco-v17"
             },
             "development": {
               "tsConfig": "projects/ngx-obelisco-v17/tsconfig.lib.json"
