@@ -9,7 +9,8 @@ import {
   DROPDOWN_ITEMS_WITH_SUBITEMS,
   DROPDOWN_NAVIGATION_EXAMPLE_ALIGN_TS,
   DROPDOWN_NAVIGATION_EXAMPLE_CASCADE_TS,
-  DROPDOWN_NAVIGATION_EXAMPLE_ICONS_TS
+  DROPDOWN_NAVIGATION_EXAMPLE_ICONS_TS,
+  DROPDOWN_ITEMS_ICONS_3_OPTION
 } from 'src/app/constants/dropdown.constants';
 
 @Component({
@@ -19,6 +20,7 @@ import {
 })
 export class DropdownNavigationExamplesComponent {
   public dropdownItemsIcons = DROPDOWN_ITEMS_ICONS;
+  public dropdownItemsIcons3Option = DROPDOWN_ITEMS_ICONS_3_OPTION;
   public dropdownItemsLeft = DROPDOWN_ITEMS_LEFT;
   public dropdownItemsRight = DROPDOWN_ITEMS_RIGHT;
   public dropdownItemsWithSubitems = DROPDOWN_ITEMS_WITH_SUBITEMS;

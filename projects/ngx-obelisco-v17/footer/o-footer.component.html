@@ -22,8 +22,11 @@
       <section *ngIf="!isNetworkSectionHidden">
         <h3>Redes de la ciudad</h3>
         <ul class="list-inline">
-          <li class="list-inline-item redes-items" *ngFor="let network of networkCustomItems">
-            <a [href]="network.src" target="_blank"><i class="bx {{ network.icon }}"></i>{{ network.title }}</a>
+          <ng-container *>
+
+          </ng-container>
+          <li class="list-inline-item redes-items" *ngFor="let network of networkCustomItems" [ngClass]="network.customClass">
+            <a [href]="network.src" target="_blank"><i *ngIf="network.icon" class="bx {{ network.icon }}"></i>{{ network.title }}</a>
           </li>
         </ul>
       </section>
@@ -37,21 +40,21 @@
             <img
               oDefaultImage
               class="d-lg-none"
-              src="https://raw.githubusercontent.com/gcba/Obelisco/8e3c51245a98c0c2c5fed1e43e20d53fa135e98d/static/footer/ciudad-ba-sm.svg"
+              src="https://gcba.github.io/Obelisco-V2/images/logo-footer-mobile.svg"
               alt="Logo de Ciudad de Buenos Aires"
               height="48"
             />
             <img
               oDefaultImage
-              class="d-none d-lg-inline"
-              src="https://raw.githubusercontent.com/gcba/Obelisco/8e3c51245a98c0c2c5fed1e43e20d53fa135e98d/static/footer/ciudad-ba.svg"
+              class="d-none d-md-inline"
+              src="https://gcba.github.io/Obelisco-V2/images/logo-footer.svg"
               alt="Logo de Ciudad de Buenos Aires"
               height="40"
             />
             <img
               oDefaultImage
               class="img-vamos-ba"
-              src="https://raw.githubusercontent.com/gcba/Obelisco/8e3c51245a98c0c2c5fed1e43e20d53fa135e98d/static/footer/vamos-ba.svg"
+              src="https://gcba.github.io/Obelisco-V2/images/logo-footer-ba.svg"
               alt="Logo de Vamos Buenos Aires"
             />
           </div>

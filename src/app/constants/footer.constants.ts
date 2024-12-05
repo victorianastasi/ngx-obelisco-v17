@@ -283,8 +283,8 @@ export const FOOTER_EXAMPLE_INDICATOR_HTML = `
   [isPhoneSectionHidden]="true"
   indicatorText="¿Te fue útil esta página?"
 >
-  <button class="btn btn-primary">Sí, me fue útil</button>
-  <button class="btn btn-secondary">No me sirvió</button>
+  <button class="btn btn-outline-secondary">Sí, me fue útil</button>
+  <button class="btn btn-outline-secondary">No me sirvió</button>
 </o-footer>
 `;
 

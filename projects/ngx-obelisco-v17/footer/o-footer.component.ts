@@ -46,9 +46,9 @@ const NETWORK_LIST = [
     icon: 'bx bxl-instagram-alt',
   },
   {
-    title: 'Twitter',
-    src: 'https://twitter.com/buenosaires',
-    icon: 'bxl-twitter',
+    title: 'X',
+    src: 'https://x.com/gcba',
+    customClass: "social-x",
   },
   {
     title: 'YouTube',

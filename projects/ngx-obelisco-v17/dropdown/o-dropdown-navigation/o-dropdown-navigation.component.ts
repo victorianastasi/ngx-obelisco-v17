@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { DropdownNavigationItem } from 'ngx-obelisco-v17/core/models';
+import { DropdownNavigationItem, Sizes } from 'ngx-obelisco-v17/core/models';
 
 @Component({
   selector: 'o-dropdown-navigation',
@@ -7,7 +7,6 @@ import { DropdownNavigationItem } from 'ngx-obelisco-v17/core/models';
   styleUrls: ['./o-dropdown-navigation.component.scss'],
 })
 export class ODropdownNavigationComponent implements OnChanges {
-  @Input() public dataTarget: string = 'dropdown';
   @Input() public title!: string;
   @Input() public iconLeft!: string;
   @Input() public iconRight!: string;
@@ -16,6 +15,7 @@ export class ODropdownNavigationComponent implements OnChanges {
   @Input() public dropNavItems!: DropdownNavigationItem[];
   @Input() public isPositionRight: boolean = false;
   @Input() public isBordered: boolean = true;
+  @Input() public size?: Sizes = 'lg';
   @Input() public customClasses: string = '';
   @Input() public ariaLabel!: string;
 
@@ -27,5 +27,16 @@ export class ODropdownNavigationComponent implements OnChanges {
         (item) => item.children && item.children.length > 0
       );
     }
+  }
+
+  getClassNames(): string {
+    const sizeClass = this.size !== 'md' ? ' btn-' + this.size : '';
+    const borderedClass = this.isBordered ? ' btn-dropdown-border' : '';
+    const customClass = this.customClasses ? ' ' + this.customClasses : '';
+    return 'btn' + sizeClass + borderedClass + customClass;
+  }
+
+  public get dropNavItemshasChildren(): boolean {
+    return this.dropNavItems?.some(item => item.children && item.children.length > 0);
   }
 }

@@ -6,14 +6,14 @@ import { OBlockModule } from 'ngx-obelisco-v17/block';
 import { OButtonModule } from 'ngx-obelisco-v17/button';
 import { OSpinnerModule } from 'ngx-obelisco-v17/spinner';
 import { OProgressBarModule } from 'ngx-obelisco-v17/progress-bar';
+import { OFooterModule } from 'ngx-obelisco-v17/footer';
+import { ODropdownModule } from 'ngx-obelisco-v17/dropdown';
 
 // import { OAccessModule } from 'ngx-obelisco-v17/access';
 // import { OBreadcrumbModule } from 'ngx-obelisco-v17/breadcrumb';
 // import { OCalendarModule } from 'ngx-obelisco-v17/calendar';
 // import { OCardModule } from 'ngx-obelisco-v17/card';
 // import { OCollapseModule } from 'ngx-obelisco-v17/collapse';
-// import { ODropdownModule } from 'ngx-obelisco-v17/dropdown';
-// import { OFooterModule } from 'ngx-obelisco-v17/footer';
 // import { OGalleryModule } from 'ngx-obelisco-v17/gallery';
 // import { OHighlightedModule } from 'ngx-obelisco-v17/highlighted';
 // import { OIconModule } from 'ngx-obelisco-v17/icon';
@@ -41,13 +41,14 @@ import { OProgressBarModule } from 'ngx-obelisco-v17/progress-bar';
     OButtonModule,
     OProgressBarModule,
     OSpinnerModule,
+    OFooterModule,
+    ODropdownModule,
+
     // OAccessModule,
     // OSearchModule,
     // OCalendarModule,
     // OCollapseModule,
-    // ODropdownModule,
     // OHighlightedModule,
-    // OFooterModule,
     // OGalleryModule,
     // ONavbarModule,
     // OListModule,
@@ -73,14 +74,14 @@ import { OProgressBarModule } from 'ngx-obelisco-v17/progress-bar';
     OButtonModule,
     OProgressBarModule,
     OSpinnerModule,
+    OFooterModule,
+    ODropdownModule,
 
     // OAccessModule,
     // OSearchModule,
     // OCalendarModule,
     // OCollapseModule,
-    // ODropdownModule,
     // OHighlightedModule,
-    // OFooterModule,
     // OGalleryModule,
     // ONavbarModule,
     // OListModule,
