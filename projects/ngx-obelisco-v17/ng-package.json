@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/ngx-obelisco-v17",
+  "dest": "../../dist/ngx-obelisco",
   "lib": {
     "entryFile": "./index.ts"
   },

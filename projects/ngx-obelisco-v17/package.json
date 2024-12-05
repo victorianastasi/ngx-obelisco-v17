@@ -1,15 +1,6 @@
 {
-  "name": "ngx-obelisco-v17",
+  "name": "@vnastasi/ngx-obelisco-v17",
   "version": "0.0.0",
-  "peerDependencies": {
-    "@angular/common": "^17.3.0",
-    "@angular/core": "^17.3.0",
-    "@ngneat/helipopper": "^8.0.3"
-  },
-  "dependencies": {
-    "tslib": "^2.3.0"
-  },
-  "sideEffects": false,
   "description": "Componentes funcionales y reutilizables para Angular.",
   "author": "Dirección General de Experiencia Digital",
   "homepage": "https://ngx-obelisco-v17.web.app/",
@@ -25,5 +16,21 @@
     "components",
     "design",
     "ui"
-  ]
+  ],
+  "main": "bundles/ngx-obelisco-v17.umd.js",
+  "module": "fesm2015/ngx-obelisco-v17.js",
+  "es2015": "fesm2015/ngx-obelisco-v17.js",
+  "typings": "ngx-obelisco-v17.d.ts",
+  "sideEffects": false,
+  "peerDependencies": {
+    "@angular/common": "^17.3.0",
+    "@angular/core": "^17.3.0",
+    "@ngneat/helipopper": "^8.0.3"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
