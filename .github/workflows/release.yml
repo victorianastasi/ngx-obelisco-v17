@@ -28,13 +28,17 @@ jobs:
       - name: Build Angular library
         run: npm run build ngx-obelisco-v17
 
-      - name: Publish library to NPM
-        working-directory: ./dist/ngx-obelisco-v17
+      - name: Pack the library
+        run: |
+          cd dist/ngx-obelisco-v17
+          npm pack
+
+      - name: Publish to NPM
+        run: |
+          cd dist/ngx-obelisco-v17
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.TOKEN_NPM }}
-        run: |
-          npm pack
-          npm publish
 
       - name: Run Semantic Release
         env:

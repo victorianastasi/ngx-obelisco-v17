@@ -2,22 +2,13 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "rootDir": "projects/ngx-obelisco-v17",
     "outDir": "../../out-tsc/lib",
     "declaration": true,
     "declarationMap": true,
     "inlineSources": true,
-    "types": [],
-    "paths": {
-      "ngx-obelisco": ["./index.ts"],
-      "ngx-obelisco/*": ["./*"]
-    }
+    "types": []
   },
-  "angularCompilerOptions": {
-    "paths": {
-      "ngx-obelisco": ["./index.ts"],
-      "ngx-obelisco/*": ["./*"]
-    }
-  },
-  "exclude": ["node_modules", "test.ts", "./**/*.spec.ts", "./*.spec.ts"]
+  "exclude": [
+    "**/*.spec.ts"
+  ]
 }
