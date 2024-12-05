@@ -14,7 +14,16 @@
     "paths": {
       // "ngx-obelisco": ["./dist/ngx-obelisco"]
       "ngx-obelisco-v17": ["projects/ngx-obelisco-v17/index.ts"],
-      "ngx-obelisco-v17/*": ["projects/ngx-obelisco-v17/*"]
+      "ngx-obelisco-v17/*": ["projects/ngx-obelisco-v17/*"],
+      "include": [
+        // "projects/ngx-obelisco-v17/core/*.ts",
+        // "projects/ngx-obelisco-v17/access/*.ts",
+        "projects/ngx-obelisco-v17/*.ts" 
+      ],
+      "exclude": [
+        "node_modules",
+        "dist" 
+      ]
     },
     "esModuleInterop": true,
     "sourceMap": true,
