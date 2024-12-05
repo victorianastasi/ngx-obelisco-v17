@@ -8,24 +8,22 @@
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
+    "noImplicitReturns": false,
     "noFallthroughCasesInSwitch": true,
-    "skipLibCheck": true,
-    "paths": {
-      // "ngx-obelisco": ["./dist/ngx-obelisco"]
-      "ngx-obelisco-v17": ["projects/ngx-obelisco-v17/index.ts"],
-      "ngx-obelisco-v17/*": ["projects/ngx-obelisco-v17/*"]
-    },
-    "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,
+    "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
+    "noImplicitAny": true,
+    "paths": {
+      "ngx-obelisco": ["projects/ngx-obelisco/index.ts"],
+      "ngx-obelisco/*": ["projects/ngx-obelisco/*"]
+    },
     "importHelpers": true,
-    "target": "ES2022",
-    "module": "ES2022",
-    "useDefineForClassFields": false,
-    "lib": ["ES2022", "dom"]
+    "target": "es2017",
+    "module": "es2020",
+    "lib": ["es2020", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
