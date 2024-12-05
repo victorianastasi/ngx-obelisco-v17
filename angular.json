@@ -118,7 +118,6 @@
       "architect": {
         
         "build": {
-<<<<<<< HEAD
             "builder": "@angular-devkit/build-angular:browser",
             "options": {
               "outputPath": "dist/ngx-obelisco-v17",
@@ -134,15 +133,6 @@
                 "src/styles.css"
               ],
               "scripts": []
-=======
-          "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": {
-            "project": "projects/ngx-obelisco-v17/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/ngx-obelisco-v17/tsconfig.lib.prod.json"
->>>>>>> 5f909f8f08fb41fcc10982400f6bececf1eb2f52
             },
             "configurations": {
               "production": {
