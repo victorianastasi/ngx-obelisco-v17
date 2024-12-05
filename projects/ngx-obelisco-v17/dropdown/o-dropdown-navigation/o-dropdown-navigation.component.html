@@ -1,34 +1,49 @@
 <div class="dropdown">
   <button
     type="button"
-    class="btn btn-dropdown btn-dropdown-lg"
-    [class.btn-dropdown-border]="isBordered"
-    [class.dropdown-toggle]="!hasChildren"
-    [attr.data-toggle]="hasChildren ? 'collapse' : 'dropdown'"
-    [attr.data-target]="hasChildren ? '#' + dataTarget : null"
-    [attr.aria-controls]="hasChildren ? dataTarget : null"
-    aria-haspopup="true"
+    class="btn btn-dropdown"
+    [ngClass]="getClassNames()"
+    [attr.data-bs-toggle]="'dropdown'"
     aria-expanded="false"
-    [ngClass]="customClasses"
     [attr.aria-label]="ariaLabel"
+    [attr.data-bs-auto-close]="dropNavItemshasChildren ? 'outside' : null"
   >
-    <ng-container *ngIf="iconLeft">
-      <i *ngIf="iconLeft.includes('bx')" class="{{ iconLeft }}" [class.btn-dropdown-icon]="isAnimatedIconLeft"></i>
+    <ng-container *ngIf="(!iconLeft || iconLeft != 'none') && isPositionRight">
+      <span
+        class="material-symbols-rounded btn-dropdown-icon"
+        aria-hidden="true"
+        >
+          expand_more
+        </span>
+    </ng-container>
+    <ng-container *ngIf="iconLeft && iconLeft != 'none'">
+      <i *ngIf="iconLeft.includes('bx')" [class]="iconLeft" [class.o-icon]="!isAnimatedIconLeft" [class.btn-dropdown-icon]="isAnimatedIconLeft"></i>
       <span
         *ngIf="!iconLeft.includes('bx')"
-        class="material-symbols-rounded o-icon"
+        class="material-symbols-rounded"
         aria-hidden="true"
+        [class.o-icon]="!isAnimatedIconLeft"
         [class.btn-dropdown-icon]="isAnimatedIconLeft"
         >{{ iconLeft }}</span
       >
     </ng-container>
-    <span class="btn-dropdown-text" *ngIf="title">{{ title }}</span>
-    <ng-container *ngIf="iconRight">
-      <i *ngIf="iconRight.includes('bx')" class="{{ iconRight }}" [class.btn-dropdown-icon]="isAnimatedIconRight"></i>
+    <span class="btn-dropdown-text ellipsis-1" *ngIf="title">{{ title }}</span>
+    <ng-container *ngIf="(!iconRight || iconRight != 'none') && !isPositionRight">
+      <span
+        class="material-symbols-rounded btn-dropdown-icon"
+        aria-hidden="true"
+        >
+          expand_more
+        </span>
+    </ng-container>
+
+    <ng-container *ngIf="iconRight && iconRight != 'none'">
+      <i *ngIf="iconRight.includes('bx')" [class]="iconRight" [class.o-icon]="!isAnimatedIconRight" [class.btn-dropdown-icon]="isAnimatedIconRight"></i>
       <span
         *ngIf="!iconRight.includes('bx')"
-        class="material-symbols-rounded o-icon"
+        class="material-symbols-rounded"
         aria-hidden="true"
+        [class.o-icon]="!isAnimatedIconRight"
         [class.btn-dropdown-icon]="isAnimatedIconRight"
         >{{ iconRight }}</span
       >
@@ -36,9 +51,8 @@
   </button>
   <div
     class="dropdown-menu"
-    [class.dropdown-menu-right]="isPositionRight"
+    [class.dropdown-menu-end]="isPositionRight"
     [class.collapse]="hasChildren"
-    [id]="hasChildren ? dataTarget : null"
   >
     <ng-container *ngFor="let item of dropNavItems">
       <a
@@ -50,7 +64,7 @@
         [ngClass]="item.customClasses"
       >
         <ng-container *ngTemplateOutlet="iconTemplate; context: { icon: item.iconLeft }"></ng-container>
-        <span class="item-text" [class.text-right]="item.textPosition == 'right'">{{ item.text }}</span>
+        <span class="item-text" [class.text-end]="item.textPosition == 'right'">{{ item.text }}</span>
         <ng-container *ngTemplateOutlet="iconTemplate; context: { icon: item.iconRight }"></ng-container>
       </a>
       <a
@@ -63,50 +77,49 @@
         [ngClass]="item.customClasses"
       >
         <ng-container *ngTemplateOutlet="iconTemplate; context: { icon: item.iconLeft }"></ng-container>
-        <span class="item-text" [class.text-right]="item.textPosition == 'right'">{{ item.text }}</span>
+        <span class="item-text" [class.text-end]="item.textPosition == 'right'">{{ item.text }}</span>
         <ng-container *ngTemplateOutlet="iconTemplate; context: { icon: item.iconRight }"></ng-container>
       </a>
 
       <div *ngIf="item.children" class="dropdown sub-dropdown">
         <button
           type="button"
-          class="btn btn-dropdown btn-dropdown-lg dropdown-toggle sub-btn-dropdown"
-          data-toggle="dropdown"
-          aria-haspopup="true"
+          class="btn btn-dropdown"
+          data-bs-toggle="dropdown"
           aria-expanded="false"
           [ngClass]="item.customClasses"
         >
           <ng-container
             *ngTemplateOutlet="iconTemplate; context: { icon: item.iconLeft, animated: item.isAnimatedIconLeft }"
           ></ng-container>
-          <span class="item-text" [class.text-right]="item.textPosition == 'right'">{{ item.text }}</span>
+          <span class="btn-dropdown-text ellipsis-1" [class.text-end]="item.textPosition == 'right'">{{ item.text }}</span>
           <ng-container
             *ngTemplateOutlet="iconTemplate; context: { icon: item.iconRight, animated: item.isAnimatedIconRight }"
           ></ng-container>
         </button>
-        <div class="dropdown-menu sub-dropdown-menu">
+        <div class="dropdown-menu">
           <ng-container *ngFor="let subitem of item.children">
             <a
               *ngIf="subitem.route"
-              class="dropdown-item sub-item"
+              class="dropdown-item"
               [class.item-danger]="subitem.isItemDanger"
               [routerLink]="subitem.route"
               [ngClass]="subitem.customClasses"
             >
               <ng-container *ngTemplateOutlet="iconTemplate; context: { icon: subitem.iconLeft }"></ng-container>
-              <span class="item-text" [class.text-right]="subitem.textPosition == 'right'">{{ subitem.text }}</span>
+              <span class="item-text" [class.text-end]="subitem.textPosition == 'right'">{{ subitem.text }}</span>
               <ng-container *ngTemplateOutlet="iconTemplate; context: { icon: subitem.iconRight }"></ng-container>
             </a>
             <a
               *ngIf="subitem.link"
-              class="dropdown-item sub-item"
+              class="dropdown-item"
               [class.item-danger]="subitem.isItemDanger"
               [href]="subitem.link"
               target="_blank"
               [ngClass]="subitem.customClasses"
             >
               <ng-container *ngTemplateOutlet="iconTemplate; context: { icon: subitem.iconLeft }"></ng-container>
-              <span class="item-text" [class.text-right]="subitem.textPosition == 'right'">{{ subitem.text }}</span>
+              <span class="item-text" [class.text-end]="subitem.textPosition == 'right'">{{ subitem.text }}</span>
               <ng-container *ngTemplateOutlet="iconTemplate; context: { icon: subitem.iconRight }"></ng-container>
             </a>
           </ng-container>
@@ -118,7 +131,7 @@
 
 <ng-template #iconTemplate let-icon="icon" let-animated="animated">
   <ng-container *ngIf="icon">
-    <i *ngIf="icon.includes('bx')" class="{{ icon }}" [class.btn-dropdown-icon]="animated"></i>
+    <i *ngIf="icon.includes('bx')" [class]="'o-icon ' + icon" [class.btn-dropdown-icon]="animated"></i>
     <span
       *ngIf="!icon.includes('bx')"
       class="material-symbols-rounded o-icon"

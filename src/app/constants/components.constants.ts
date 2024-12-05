@@ -20,8 +20,8 @@ export enum ComponentEnum {
   panel = 'Panel',
   panelSmall = 'Panel Chico',
   stepsForm = 'Pasos de un formulario',
-  dropdown = 'Desplegables de navegación',
-  dropdownNavigation = 'Desplegables de navegación',
+  dropdown = 'Desplegable de navegación',
+  dropdownNavigation = 'Desplegable de navegación',
   dropdownSelection = 'Desplegables de selección',
   statusMessage = 'Mensaje de estado',
   spinner = 'Spinner',
@@ -91,7 +91,7 @@ export const COMPONENTS_NAVIGATION = [
     route: '/components/button'
   },
   {
-    title: 'Desplegables',
+    title: 'Desplegable de navegación',
     image: { src: 'assets/component-cards/Desplegable.svg' },
     route: '/components/dropdown/dropdown-navigation',
     // children: [

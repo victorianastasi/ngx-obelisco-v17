@@ -1,7 +1,6 @@
 import { Positions } from './positions.models';
 
 export interface DropdownNavigationItem {
-  id?: string;
   text?: string;
   textPosition?: Positions;
   iconLeft?: string;

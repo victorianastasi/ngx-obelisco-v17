@@ -77,12 +77,12 @@ export const DROPDOWN_SELECTION = DROP_NAVIGATION.map((el) => {
 // DROPDOWN NAVIGATION API
 export const DROPDOWN_NAVIGATION_DATA_SOURCE: DataSource[] = [
   {
-    name: { data: '@Input() dataTarget: string', customClasses: '' },
-    description: { data: 'Asigna un destino de datos.', customClasses: '' },
-  },
-  {
     name: { data: '@Input() title: string', customClasses: '' },
     description: { data: 'Asigna un título.', customClasses: '' },
+  },
+  {
+    name: { data: '@Input() ariaLabel: string', customClasses: '' },
+    description: { data: 'Asigna el texto al atributo aria-label.', customClasses: '' },
   },
   {
     name: { data: '@Input() iconLeft: string', customClasses: '' },
@@ -108,7 +108,7 @@ export const DROPDOWN_NAVIGATION_DATA_SOURCE: DataSource[] = [
   },
   {
     name: {
-      data: '@Input() children: DropdownNavigationItem[]',
+      data: '@Input() dropNavItems: DropdownNavigationItem[]',
       customClasses: '',
     },
     description: {
@@ -122,6 +122,10 @@ export const DROPDOWN_NAVIGATION_DATA_SOURCE: DataSource[] = [
       data: 'Coloca el menú desplegable a la derecha.',
       customClasses: '',
     },
+  },
+  {
+    name: { data: '@Input() size: Sizes', customClasses: '' },
+    description: { data: 'Se utiliza para establecer el tamaño del desplegable. Por defecto es grande.', customClasses: '' },
   },
   {
     name: { data: '@Input() isBordered: boolean', customClasses: '' },
@@ -138,7 +142,6 @@ export const DROPDOWN_NAVIGATION_DATA_SOURCE: DataSource[] = [
 
 export const DROPDOWN_NAVIGATION_INTERFACE = `
 interface DropdownNavigationItem {
-  id?: string;
   text?: string;
   textRight?: boolean;
   iconLeft?: string;
@@ -154,13 +157,6 @@ interface DropdownNavigationItem {
 }
 `;
 export const DROPDOWN_NAVIGATION_DATA_SOURCE_INTERFACE: DataSource[] = [
-  {
-    name: { data: 'id: string', customClasses: '' },
-    description: {
-      data: 'Identificador único para el elemento.',
-      customClasses: '',
-    },
-  },
   {
     name: { data: 'text: string', customClasses: '' },
     description: { data: 'Texto descriptivo o título.', customClasses: '' },
@@ -372,71 +368,91 @@ export const DROPDOWN_SELECTION_DATA_SOURCE_INTERFACE: DataSource[] = [
 //DROPDOWN NAVIGATION LIST
 export const DROPDOWN_ITEMS_ICONS: DropdownNavigationItem[] = [
   {
-    iconLeft: 'info',
+    iconLeft: 'bx bx-plus',
     text: 'Opción de navegación',
-    iconRight: 'info',
-    link: 'https://www.google.com/',
+    iconRight: 'arrow_forward',
+    link: 'https://gcba.github.io/Obelisco-V2',
   },
   {
-    iconLeft: 'info',
+    iconLeft: 'bx bx-plus',
     text: 'Opción de navegación',
-    iconRight: 'info',
-    link: 'https://www.google.com/',
+    iconRight: 'arrow_forward',
+    link: 'https://gcba.github.io/Obelisco-V2',
     textPosition: 'right',
   },
   {
-    iconLeft: 'info',
+    iconLeft: 'bx bx-plus',
     text: 'Opción de navegación',
-    iconRight: 'info',
-    link: 'https://www.google.com/',
+    iconRight: 'arrow_forward',
+    link: 'https://gcba.github.io/Obelisco-V2',
     isDisabled: true,
   },
   {
     isItemDanger: true,
     iconLeft: 'logout',
     text: 'Cerrar sesión',
-    link: 'https://www.google.com/',
+    link: 'https://gcba.github.io/Obelisco-V2',
+  },
+];
+export const DROPDOWN_ITEMS_ICONS_3_OPTION: DropdownNavigationItem[] = [
+  {
+    iconLeft: 'bx bx-plus',
+    text: 'Opción de navegación',
+    link: 'https://gcba.github.io/Obelisco-V2',
+  },
+  {
+    text: 'Opción de navegación',
+    iconRight: 'arrow_forward',
+    link: 'https://gcba.github.io/Obelisco-V2',
+    textPosition: 'right',
+  },
+  {
+    isItemDanger: true,
+    textPosition: 'right',
+    iconRight: 'logout',
+    text: 'Cerrar sesión',
+    link: 'https://gcba.github.io/Obelisco-V2',
   },
 ];
 
 export const DROPDOWN_ITEMS_LEFT: DropdownNavigationItem[] = [
   {
     text: 'Opción de navegación',
-    link: 'https://www.google.com/',
+    link: 'https://gcba.github.io/Obelisco-V2',
   },
   {
     text: 'Opción de navegación',
-    link: 'https://www.google.com/',
+    link: 'https://gcba.github.io/Obelisco-V2',
   },
   {
     text: 'Opción de navegación',
-    link: 'https://www.google.com/',
+    link: 'https://gcba.github.io/Obelisco-V2',
   },
   {
     isItemDanger: true,
     iconLeft: 'logout',
     text: 'Cerrar sesión',
-    link: 'https://www.google.com/',
+    link: 'https://gcba.github.io/Obelisco-V2',
   },
 ];
 
 export const DROPDOWN_ITEMS_RIGHT: DropdownNavigationItem[] = [
   {
     text: 'Opción de navegación',
-    link: 'https://www.google.com/',
+    link: 'https://gcba.github.io/Obelisco-V2',
   },
   {
     text: 'Opción de navegación',
-    link: 'https://www.google.com/',
+    link: 'https://gcba.github.io/Obelisco-V2',
   },
   {
     text: 'Opción de navegación',
-    link: 'https://www.google.com/',
+    link: 'https://gcba.github.io/Obelisco-V2',
   },
   {
     isItemDanger: true,
     text: 'Cerrar sesión',
-    link: 'https://www.google.com/',
+    link: 'https://gcba.github.io/Obelisco-V2',
     iconRight: 'logout',
   },
 ];
@@ -453,30 +469,30 @@ export const DROPDOWN_ITEMS_WITH_SUBITEMS: DropdownNavigationItem[] = [
       },
       {
         text: 'Opción de navegación',
-        link: 'https://www.google.com/',
+        link: 'https://gcba.github.io/Obelisco-V2',
       },
       {
         text: 'Opción de navegación',
-        link: 'https://www.google.com/',
+        link: 'https://gcba.github.io/Obelisco-V2',
       },
     ],
   },
   {
     text: 'Opción de navegación',
-    link: 'https://www.google.com/',
+    link: 'https://gcba.github.io/Obelisco-V2',
   },
   {
     text: 'Opción de navegación',
-    link: 'https://www.google.com/',
+    link: 'https://gcba.github.io/Obelisco-V2',
   },
   {
     text: 'Opción de navegación',
-    link: 'https://www.google.com/',
+    link: 'https://gcba.github.io/Obelisco-V2',
   },
   {
     isItemDanger: true,
     text: 'Cerrar sesión',
-    link: 'https://www.google.com/',
+    link: 'https://gcba.github.io/Obelisco-V2',
     iconLeft: 'logout',
   },
 ];
@@ -484,60 +500,105 @@ export const DROPDOWN_ITEMS_WITH_SUBITEMS: DropdownNavigationItem[] = [
 // DROPDOWN NAVIGATITS
 export const DROPDOWN_NAVIGATION_EXAMPLE_ICONS_HTML = `
 <o-dropdown-navigation
-  dataTarget="dropdown1"
   [dropNavItems]="dropdownItemsIcons"
-  iconRight="expand_more"
   title="Desplegable"
-  [isAnimatedIconRight]="true"
 ></o-dropdown-navigation>
 
 <o-dropdown-navigation
-  dataTarget="dropdown2"
   [dropNavItems]="dropdownItemsIcons"
   title="Desplegable"
-  iconLeft="menu"
+  iconLeft="bx bx-plus"
 ></o-dropdown-navigation>
 
 <o-dropdown-navigation
-  dataTarget="dropdown3"
-  [dropNavItems]="dropdownItemsIcons"
+  [dropNavItems]="dropdownItemsIcons2"
   iconLeft="menu"
+  iconRight="none"
+  ariaLabel="Menú"
 ></o-dropdown-navigation>
 `;
 
 export const DROPDOWN_NAVIGATION_EXAMPLE_ALIGN_HTML = `
 <o-dropdown-navigation
-  dataTarget="dropdownLeft"
   [dropNavItems]="dropdownItemsLeft"
   title="Desplegable Izq."
-  iconRight="expand_more"
-  [isAnimatedIconRight]="true"
 ></o-dropdown-navigation>
 
 <o-dropdown-navigation
-  dataTarget="dropdownRight"
   [dropNavItems]="dropdownItemsRight"
-  iconLeft="expand_more"
   title="Desplegable Der."
   [isPositionRight]="true"
-  [isAnimatedIconRight]="true"
 ></o-dropdown-navigation>
 `;
 
 export const DROPDOWN_NAVIGATION_EXAMPLE_CASCADE_HTML = `
 <o-dropdown-navigation
-  dataTarget="dropdownCascade"
   [dropNavItems]="dropdownItemsWithSubitems"
   title="Desplegable"
 ></o-dropdown-navigation>
 `;
 
 // DROPDOWN NAVIGATION TS
-export const DROPDOWN_NAVIGATION_EXAMPLE_ICONS_TS = formattedExampleTsCode(
-  'dropdownItemsIcons',
-  DROPDOWN_ITEMS_ICONS,
-  'DropdownNavigationItem'
-);
+export const DROPDOWN_NAVIGATION_EXAMPLE_ICONS_TS = `
+import { Component  } from '@angular/core';
+import { DropdownNavigationItem } from 'ngx-obelisco-v17/core/models';
+
+@Component({
+  selector: 'app-example',
+  templateUrl: './app-example.component.html',
+})
+export class ExampleComponent {
+  public dropdownItemsIcons: DropdownNavigationItem[] = [
+      {
+        "iconLeft": "bx bx-plus",
+        text: "Opción de navegación",
+        "iconRight": "arrow_forward",
+        link: "https://gcba.github.io/Obelisco-V2"
+      },
+      {
+        "iconLeft": "bx bx-plus",
+        text: "Opción de navegación",
+        "iconRight": "arrow_forward",
+        link: "https://gcba.github.io/Obelisco-V2",
+        "textPosition": "right"
+      },
+      {
+        "iconLeft": "bx bx-plus",
+        text: "Opción de navegación",
+        "iconRight": "arrow_forward",
+        link: "https://gcba.github.io/Obelisco-V2",
+        "isDisabled": true
+      },
+      {
+        "isItemDanger": true,
+        "iconLeft": "logout",
+        text: "Cerrar sesión",
+        link: "https://gcba.github.io/Obelisco-V2"
+      }
+  ];
+
+  public dropdownItemsIcons2: DropdownNavigationItem[] = [
+      {
+        "iconLeft": "bx bx-plus",
+        text: "Opción de navegación",
+        link: "https://gcba.github.io/Obelisco-V2"
+      },
+      {
+        text: "Opción de navegación",
+        "iconRight": "arrow_forward",
+        link: "https://gcba.github.io/Obelisco-V2",
+        "textPosition": "right"
+      },
+      {
+        "isItemDanger": true,
+        "textPosition": "right",
+        "iconRight": "logout",
+        text: "Cerrar sesión",
+        link: "https://gcba.github.io/Obelisco-V2"
+      }
+  ];
+}
+`;
 
 export const DROPDOWN_NAVIGATION_EXAMPLE_ALIGN_TS = formattedExampleTsCodeAlign(
   DROPDOWN_ITEMS_LEFT,
