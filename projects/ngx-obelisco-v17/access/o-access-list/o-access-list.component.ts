@@ -1,9 +1,8 @@
 import { Component, Input, OnChanges } from '@angular/core';
-import {
-  Access,
-  AccessCategory,
-  AccessList,
-} from 'ngx-obelisco-v17/core/models';
+
+import { Access, AccessCategory, AccessList } from "../../core/models/access.models"
+
+
 
 @Component({
   selector: 'o-access-list',
@@ -19,7 +18,7 @@ export class OAccessListComponent implements OnChanges {
 
   ngOnChanges() {
     if (this.items && this.items.children) {
-      this.items.children.forEach((child) => {
+      this.items.children.forEach((child: any) => {
         if (this.isAccess(child)) {
           this.accessList.push(child as Access);
         } else if (this.isAccessCategory(child)) {

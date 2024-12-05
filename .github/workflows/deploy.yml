@@ -23,7 +23,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm ci
-          npm run deploy
+          npm run build ngx-obelisco-v17-demo --configuration production
       - name: Deploy 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
