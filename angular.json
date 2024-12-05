@@ -125,6 +125,9 @@
             "tsConfig": "projects/ngx-obelisco-v17/tsconfig.spec.json",
             "polyfills": ["zone.js", "zone.js/testing"]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
