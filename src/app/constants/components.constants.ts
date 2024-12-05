@@ -26,7 +26,7 @@ export enum ComponentEnum {
   statusMessage = 'Mensaje de estado',
   spinner = 'Spinner',
   tooltip = 'Tooltip',
-  navbar = 'Header',
+  navbar = 'Encabezado (Header)',
   switch = 'Switch',
   list = 'Lista de pasos',
   listStep = 'Lista de pasos',
@@ -105,7 +105,11 @@ export const COMPONENTS_NAVIGATION = [
     //   }
     // ]
   },
-  
+  {
+    title: 'Encabezado (Header)',
+    image: { src: 'assets/component-cards/header.jpg' },
+    route: '/components/navbar'
+  },
   // {
   //   title: 'Colapsable',
   //   image: { src: 'assets/component-cards/Colapsables.svg' },
@@ -187,11 +191,7 @@ export const COMPONENTS_NAVIGATION = [
   //   image: { src: 'assets/component-cards/Tooltip.svg' },
   //   route: '/components/tooltip'
   // },
-  // {
-  //   title: 'Header',
-  //   image: { src: 'assets/component-cards/header.jpg' },
-  //   route: '/components/navbar'
-  // },
+  
   // {
   //   title: 'Switch',
   //   image: { src: 'assets/component-cards/Switch.svg' },
