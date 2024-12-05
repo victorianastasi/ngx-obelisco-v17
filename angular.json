@@ -103,22 +103,45 @@
       "sourceRoot": "projects/ngx-obelisco-v17",
       "prefix": "o",
       "architect": {
+        
         "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": {
-            "project": "projects/ngx-obelisco-v17/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/ngx-obelisco-v17/tsconfig.lib.prod.json",
-              "baseHref": "projects/ngx-obelisco-v17"
+            "builder": "@angular-devkit/build-angular:browser",
+            "options": {
+              "outputPath": "dist/ngx-obelisco-v17",
+              "index": "src/index.html",
+              "main": "src/main.ts",
+              "polyfills": "src/polyfills.ts",
+              "tsConfig": "src/tsconfig.app.json",
+              "assets": [
+                "src/favicon.ico",
+                "src/assets"
+              ],
+              "styles": [
+                "src/styles.css"
+              ],
+              "scripts": []
             },
-            "development": {
-              "tsConfig": "projects/ngx-obelisco-v17/tsconfig.lib.json"
+            "configurations": {
+              "production": {
+                "fileReplacements": [
+                  {
+                    "replace": "src/environments/environment.ts",
+                    "with": "src/environments/environment.prod.ts"
+                  }
+                ],
+                "optimization": true,
+                "outputHashing": "all",
+                "sourceMap": false,
+                "extractCss": true,
+                "namedChunks": false,
+                "aot": true,
+                "extractLicenses": true,
+                "vendorChunk": false,
+                "buildOptimizer": true,
+                "baseHref": "/ngx-obelisco-v17/"
+              }
             }
           },
-          "defaultConfiguration": "production"
-        },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
