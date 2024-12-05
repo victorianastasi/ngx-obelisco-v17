@@ -1,5 +1,5 @@
 <header
-  class="navbar navbar-light navbar-expand-lg"
+  class="navbar o-header"
   role="banner"
   [ngClass]="customClasses"
 >
@@ -22,6 +22,16 @@
           [attr.width]="media.width"
           [attr.height]="media.height"
         />
+        <ng-container *ngIf="logoMobile">
+          <img
+            *ngFor="let media of logoMobile.img"
+            [ngClass]="media.customClasses"
+            [src]="media.src"
+            [alt]="media.alt"
+            [attr.width]="media.width"
+            [attr.height]="media.height"
+          />
+        </ng-container>
       </a>
       <!-- Login button Mobile ↓ -->
       <ng-container
@@ -174,9 +184,8 @@
           <li class="dropdown" *ngIf="routeItem.children">
             <button
               type="button"
-              class="btn btn-dropdown btn-dropdown-lg dropdown-toggle"
-              data-toggle="dropdown"
-              aria-haspopup="true"
+              class="btn btn-dropdown btn-lg"
+              data-bs-toggle="dropdown"
               aria-expanded="false"
             >
               <ng-container
@@ -455,7 +464,7 @@
   <ng-container *ngIf="routesLogin">
     <div class="navbar-login{{ classMobile }}" *ngIf="!routesAccount">
       <a
-        class="btn btn-lg btn-icon btn-outline-link"
+        class="btn btn-lg btn-icon btn-outline-tertiary"
         [routerLink]="routesLogin.route"
         target="_blank"
       >

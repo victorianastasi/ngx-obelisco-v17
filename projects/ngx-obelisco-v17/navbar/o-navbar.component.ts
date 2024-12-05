@@ -32,11 +32,19 @@ export class ONavbarComponent implements OnInit, AfterViewInit, OnDestroy {
     route: '/',
     img: [
       {
-        src: 'https://buenosaires.gob.ar/assets/img/logos/LogoBA.svg',
+        src: 'https://gcba.github.io/Obelisco-V2/images/logo_ba.svg',
         alt: 'Gobierno de la Ciudad de Buenos Aires - Inicio',
-        customClasses: 'header-logo',
-        height: 41,
-        width: 76,
+        customClasses: 'd-none d-xl-block'
+      },
+    ],
+  };
+  @Input() public logoMobile: LogoHeader = {
+    route: '/',
+    img: [
+      {
+        src: 'https://gcba.github.io/Obelisco-V2/images/logo_ba_mobile.svg',
+        alt: 'Gobierno de la Ciudad de Buenos Aires - Inicio',
+        customClasses: 'd-xl-none'
       },
     ],
   };
