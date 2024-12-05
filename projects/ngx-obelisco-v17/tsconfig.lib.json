@@ -2,7 +2,6 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "rootDir": "projects/ngx-obelisco-v17",
     "outDir": "../../out-tsc/lib",
     "declaration": true,
     "declarationMap": true,

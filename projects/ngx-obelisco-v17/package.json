@@ -1,6 +1,6 @@
 {
   "name": "@vnastasi/ngx-obelisco-v17",
-  "version": "0.0.0",
+  "version": "1.4.0",
   "description": "Componentes funcionales y reutilizables para Angular.",
   "author": "Dirección General de Experiencia Digital",
   "homepage": "https://ngx-obelisco-v17.web.app/",
@@ -30,7 +30,13 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
+  "release": {
+    "branches": [
+      "master"
+    ]
+  },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "private": false
 }
