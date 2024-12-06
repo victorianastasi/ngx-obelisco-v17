@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ngx-obelisco-v17-demo",
+            "outputPath": "docs/",
             "index": "src/index.html",
             "baseHref": "/ngx-obelisco-v17/",
             "browser": "src/main.ts",
